@@ -3,223 +3,232 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Política de Privacidad — NOVAKU: History</title>
+  <title>Política de Privacidad — NOVAKU</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-      font-size: 16px;
-      line-height: 1.7;
-      color: #1a1a1a;
-      background: #ffffff;
-      padding: 40px 20px 80px;
-    }
-    .container { max-width: 800px; margin: 0 auto; }
-    header { margin-bottom: 40px; border-bottom: 2px solid #f0f0f0; padding-bottom: 24px; }
-    .app-name {
-      font-size: 22px;
-      font-weight: 800;
-      color: #FF6B4A;
-      letter-spacing: -0.5px;
-      margin-bottom: 6px;
-    }
-    h1 { font-size: 30px; font-weight: 700; color: #111; margin-bottom: 8px; }
-    .meta { font-size: 14px; color: #666; }
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 20px;
-      padding-top: 20px;
-      border-top: 1px solid #f0f0f0;
-    }
-    nav a {
-      font-size: 13px;
-      color: #FF6B4A;
-      text-decoration: none;
-      border: 1px solid #FF6B4A;
-      padding: 4px 12px;
-      border-radius: 20px;
-      transition: background 0.15s, color 0.15s;
-    }
-    nav a:hover { background: #FF6B4A; color: #fff; }
-    nav a.active { background: #FF6B4A; color: #fff; }
-    h2 {
-      font-size: 20px;
-      font-weight: 700;
-      color: #111;
-      margin-top: 40px;
-      margin-bottom: 14px;
-    }
-    h3 { font-size: 16px; font-weight: 600; margin-top: 22px; margin-bottom: 10px; color: #333; }
-    p { margin-bottom: 14px; }
-    ul, ol { margin: 0 0 14px 24px; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #ffffff; color: #1a1a1a; font-size: 16px; line-height: 1.7; }
+    .container { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+    header { background: #ffffff; border-bottom: 1px solid #e8e8e8; padding: 32px 0 24px; text-align: center; }
+    .app-name { font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #4ECBA1; margin-bottom: 10px; }
+    header h1 { font-size: 2rem; font-weight: 700; color: #1a1a1a; margin-bottom: 8px; }
+    .meta { font-size: 0.875rem; color: #666; margin-bottom: 24px; }
+    .nav-pills { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 4px; }
+    .nav-pills a { display: inline-block; padding: 6px 16px; border-radius: 20px; font-size: 0.8125rem; font-weight: 500; text-decoration: none; border: 1.5px solid #e0e0e0; color: #555; transition: border-color 0.15s, color 0.15s, background 0.15s; }
+    .nav-pills a:hover { border-color: #4ECBA1; color: #4ECBA1; }
+    .nav-pills a.active { background: #4ECBA1; border-color: #4ECBA1; color: #ffffff; }
+    main { padding: 48px 0 64px; }
+    h2 { font-size: 1.35rem; font-weight: 700; color: #1a1a1a; margin: 40px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #f0f0f0; }
+    h3 { font-size: 1.05rem; font-weight: 600; color: #1a1a1a; margin: 28px 0 10px; }
+    p { margin-bottom: 14px; color: #333; }
+    ul, ol { margin: 10px 0 14px 24px; color: #333; }
     li { margin-bottom: 6px; }
-    a { color: #FF6B4A; }
+    a { color: #4ECBA1; text-decoration: none; }
     a:hover { text-decoration: underline; }
-    .highlight-box {
-      background: #fff8f6;
-      border-left: 4px solid #FF6B4A;
-      padding: 16px 20px;
-      border-radius: 0 8px 8px 0;
-      margin: 24px 0;
-    }
-    footer { margin-top: 60px; padding-top: 24px; border-top: 1px solid #f0f0f0; font-size: 13px; color: #888; }
+    strong { font-weight: 600; color: #1a1a1a; }
+    .highlight-box { background: #f4fdf9; border: 1.5px solid #4ECBA1; border-radius: 8px; padding: 20px 24px; margin: 24px 0; }
+    .highlight-box p { margin-bottom: 6px; color: #1a1a1a; }
+    .highlight-box p:last-child { margin-bottom: 0; }
+    .warning-box { background: #fff8f0; border: 1.5px solid #f0a830; border-radius: 8px; padding: 18px 22px; margin: 20px 0; }
+    .warning-box p { margin-bottom: 6px; color: #7a4f00; }
+    .warning-box p:last-child { margin-bottom: 0; }
+    .app-section { border-left: 4px solid #e0e0e0; padding-left: 20px; margin: 8px 0; }
+    .app-section.history { border-left-color: #FF6B4A; }
+    .app-section.fanmosaic { border-left-color: #E61D25; }
+    .app-badge { display: inline-block; padding: 3px 12px; border-radius: 12px; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #ffffff; }
+    .app-badge.history { background: #FF6B4A; }
+    .app-badge.fanmosaic { background: #E61D25; }
+    .section-divider { border: none; border-top: 2px solid #f0f0f0; margin: 48px 0 32px; }
+    .app-section h2 { border-bottom-color: transparent; margin-top: 0; }
+    .app-section.history h2 { color: #FF6B4A; }
+    .app-section.fanmosaic h2 { color: #E61D25; }
+    .app-section.history h3 { color: #c9431e; }
+    .app-section.fanmosaic h3 { color: #b01520; }
+    footer { background: #f7f7f7; border-top: 1px solid #e8e8e8; padding: 28px 0; text-align: center; }
+    footer p { font-size: 0.875rem; color: #888; margin-bottom: 12px; }
+    footer p:last-child { margin-bottom: 0; }
+    footer .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; }
+    footer .footer-links a { font-size: 0.8125rem; color: #666; }
+    footer .footer-links a:hover { color: #4ECBA1; }
+    @media (max-width: 600px) { header h1 { font-size: 1.5rem; } h2 { font-size: 1.15rem; } .highlight-box, .warning-box { padding: 16px 18px; } .app-section { padding-left: 14px; } }
   </style>
 </head>
 <body>
-<div class="container">
   <header>
-    <div class="app-name">NOVAKU: History</div>
-    <h1>Política de Privacidad</h1>
-    <p class="meta">Última actualización: 27 de abril de 2026</p>
-    <nav>
-      <a href="privacy-policy.html">Privacy Policy (EN)</a>
-      <a href="privacy-policy-es.html" class="active">Política de Privacidad (ES)</a>
-      <a href="terms.html">Terms of Service (EN)</a>
-      <a href="terms-es.html">Términos de Servicio (ES)</a>
-    </nav>
-  </header>
-
-  <section>
-    <h2>1. Introducción</h2>
-    <p>Bienvenido a <strong>NOVAKU: History</strong> ("la App"), una aplicación Android desarrollada por <strong>Novaku</strong> ("nosotros" o "nuestro"). Esta Política de Privacidad explica cómo recopilamos, utilizamos, divulgamos y protegemos tu información cuando usas nuestra App.</p>
-    <p><strong>Novaku</strong> ("nosotros" o "nuestro") actúa como <strong>Responsable del Tratamiento</strong> de los datos personales procesados a través de NOVAKU: History, conforme al Reglamento General de Protección de Datos (RGPD).</p>
-    <p>Estamos comprometidos con la protección de tu información personal. Lee esta política detenidamente. Al usar la App, aceptas las prácticas descritas en este documento. Si no estás de acuerdo, por favor deja de usar la App.</p>
-  </section>
-
-  <section>
-    <h2>2. Información que Recopilamos</h2>
-    <p>La App está diseñada para funcionar sin necesidad de crear una cuenta. Sin embargo, recopilamos cierta información en función de cómo elijas usar la App:</p>
-
-    <h3>2.1 Información de Cuenta (Opcional)</h3>
-    <p>La creación de una cuenta es completamente voluntaria. Si decides registrarte, recopilamos:</p>
-    <ul>
-      <li><strong>Nombre</strong> — se muestra en tu perfil dentro de la App.</li>
-      <li><strong>Dirección de correo electrónico</strong> — utilizada para identificar tu cuenta y permitir la sincronización entre dispositivos.</li>
-    </ul>
-    <p>Si inicias sesión con Google, recibimos el nombre, la dirección de correo electrónico y la URL de la foto de perfil de tu cuenta de Google, tal como los proporciona Google Sign-In.</p>
-
-    <h3>2.2 Datos de Progreso y Actividad de Aprendizaje</h3>
-    <p>Para proporcionar la experiencia de aprendizaje principal, la App registra:</p>
-    <ul>
-      <li>Puntuaciones de los cuestionarios, número de intentos y respuestas incorrectas por lección.</li>
-      <li>XP (puntos de experiencia) totales ganados y racha de estudio (días consecutivos de estudio).</li>
-      <li>Número de lecciones completadas.</li>
-      <li>Insignias y logros desbloqueados.</li>
-    </ul>
-    <p>Estos datos se almacenan localmente en tu dispositivo y, si tienes una cuenta, también se sincronizan con nuestra base de datos en la nube.</p>
-
-    <h3>2.3 Preferencias de la App</h3>
-    <p>Almacenamos tu configuración de la App localmente, incluyendo:</p>
-    <ul>
-      <li>Idioma preferido (inglés o español).</li>
-      <li>Objetivo diario de estudio.</li>
-      <li>Estado de la suscripción premium.</li>
-    </ul>
-
-    <h3>2.4 Identificador Publicitario (AdMob)</h3>
-    <p>Para los usuarios de la versión gratuita, la App muestra anuncios a través de <strong>Google AdMob</strong>. AdMob puede recopilar el <strong>Identificador Publicitario</strong> de tu dispositivo (Android Advertising ID) para mostrar anuncios personalizados o contextuales. Puedes restablecer u optar por no recibir publicidad personalizada en la configuración de tu dispositivo, en <em>Google &gt; Anuncios</em>. Los suscriptores premium no ven anuncios.</p>
-
-    <h3>2.5 Información que No Recopilamos</h3>
-    <p>No recopilamos geolocalización precisa, datos de la cámara, del micrófono, contactos, SMS, registros de llamadas ni ningún otro dato sensible del dispositivo. El único permiso de Android que solicita la App es <code>INTERNET</code>.</p>
-  </section>
-
-  <section>
-    <h2>3. Cómo Utilizamos tu Información</h2>
-    <p>Utilizamos la información recopilada para los siguientes fines:</p>
-    <ul>
-      <li><strong>Prestar el servicio:</strong> Para ofrecer lecciones, hacer seguimiento del progreso en los cuestionarios, calcular el XP y las rachas, y desbloquear insignias.</li>
-      <li><strong>Sincronizar tu progreso:</strong> Si tienes una cuenta, para sincronizar tus datos de aprendizaje entre dispositivos a través de Supabase.</li>
-      <li><strong>Mostrar publicidad:</strong> Para mostrar anuncios relevantes a los usuarios de la versión gratuita a través de Google AdMob, lo que permite mantener la App gratuita.</li>
-      <li><strong>Gestionar suscripciones:</strong> Para verificar y restaurar el estado de tu suscripción premium a través de RevenueCat y Google Play Billing.</li>
-      <li><strong>Autenticación:</strong> Para identificar de forma segura tu cuenta cuando usas Google Sign-In.</li>
-      <li><strong>Mejorar la App:</strong> Los patrones de uso agregados y anonimizados pueden utilizarse para mejorar la experiencia de aprendizaje y la calidad del contenido.</li>
-    </ul>
-    <p>No vendemos, alquilamos ni compartimos tu información personal con terceros para sus propios fines de marketing.</p>
-  </section>
-
-  <section>
-    <h2>4. Servicios de Terceros</h2>
-    <p>La App integra los siguientes servicios de terceros, cada uno con sus propias prácticas de privacidad:</p>
-
-    <h3>4.1 Supabase</h3>
-    <p>Utilizamos <strong>Supabase</strong> como base de datos backend para almacenar cuentas de usuario y el progreso de aprendizaje sincronizado. Los servidores de Supabase se encuentran en la región de la <strong>UE (Irlanda / AWS eu-west-1)</strong>, lo que garantiza que tus datos permanezcan dentro de la Unión Europea. Supabase cumple con el RGPD. Para más información, consulta la <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidad de Supabase</a>.</p>
-
-    <h3>4.2 Google Sign-In</h3>
-    <p>Si eliges autenticarte con tu cuenta de Google, Google procesa tus datos de autenticación. Esta es una función opcional; puedes usar la App de forma anónima o con una cuenta local. Para más información, consulta la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidad de Google</a>.</p>
-
-    <h3>4.3 RevenueCat</h3>
-    <p>Utilizamos <strong>RevenueCat</strong> para gestionar las suscripciones dentro de la App (History Pro, NOVAKU Pro). RevenueCat puede procesar tu historial de compras e identificadores de dispositivo para verificar el estado de la suscripción y gestionar restauraciones. Para más información, consulta la <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidad de RevenueCat</a>.</p>
-
-    <h3>4.4 Google AdMob</h3>
-    <p>A los usuarios de la versión gratuita se les muestran anuncios de <strong>Google AdMob</strong>, un servicio de Google LLC. AdMob puede recopilar y utilizar el Android Advertising ID y otras señales para mostrar anuncios personalizados o contextuales. Los suscriptores premium no reciben anuncios y la recopilación de datos de AdMob no les aplica. Para más información, consulta la <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Política de Publicidad de Google</a> y la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidad de Google</a>.</p>
-  </section>
-
-  <section>
-    <h2>5. Almacenamiento y Seguridad de los Datos</h2>
-    <p>Nos tomamos en serio la seguridad de tus datos e implementamos medidas técnicas y organizativas apropiadas:</p>
-    <ul>
-      <li><strong>Almacenamiento local:</strong> Los datos almacenados en tu dispositivo Android están protegidos por la seguridad integrada del dispositivo (cifrado AES-256 en dispositivos compatibles a través de Android Keystore).</li>
-      <li><strong>Almacenamiento en la nube:</strong> Los datos de usuario sincronizados con Supabase se almacenan en bases de datos cifradas alojadas en la UE (Irlanda). Supabase utiliza TLS 1.2 o superior para todos los datos en tránsito.</li>
-      <li><strong>Preferencias:</strong> Las preferencias de la App se almacenan mediante la API DataStore de Android, que es privada de la App e inaccesible para otras aplicaciones.</li>
-    </ul>
-    <p>Ningún método de almacenamiento o transmisión electrónica es 100% seguro. Aunque nos esforzamos por utilizar medios comercialmente aceptables para proteger tu información, no podemos garantizar una seguridad absoluta.</p>
-  </section>
-
-  <section>
-    <h2>6. Tus Derechos</h2>
-    <p>Tienes los siguientes derechos respecto a tus datos personales:</p>
-
-    <h3>6.1 Acceso y Portabilidad</h3>
-    <p>Puedes ver todo tu progreso de aprendizaje, estadísticas y preferencias directamente en las pantallas de perfil y progreso de la App.</p>
-
-    <h3>6.2 Eliminación</h3>
-    <p>Puedes eliminar tus datos de las siguientes maneras:</p>
-    <ul>
-      <li><strong>Progreso local:</strong> Usa la opción "Reiniciar todo el progreso" en la pantalla de Perfil para borrar todo el progreso, XP, rachas e insignias almacenados localmente.</li>
-      <li><strong>Datos de cuenta:</strong> Cerrar sesión en tu cuenta elimina del dispositivo tu dirección de correo electrónico, avatar e ID de cuenta de Supabase. Para solicitar la eliminación permanente de tus datos en la nube, contáctanos en <a href="mailto:novakuapp@gmail.com">novakuapp@gmail.com</a>.</li>
-    </ul>
-    <p>Cuando eliminas tu cuenta o restableces tu progreso, tus datos se eliminan del dispositivo de inmediato. Los datos almacenados en nuestros servidores (Supabase) se borran permanentemente en un plazo de <strong>30 días</strong> tras tu solicitud.</p>
-
-    <h3>6.3 Exclusión de la Publicidad Personalizada</h3>
-    <p>Puedes excluirte de la publicidad personalizada ajustando tus preferencias en la configuración de tu dispositivo Android en <em>Google &gt; Anuncios &gt; Inhabilitar la personalización de anuncios</em>. Alternativamente, adquirir una suscripción premium elimina todos los anuncios por completo.</p>
-
-    <h3>6.4 Derechos del RGPD (Residentes en la UE)</h3>
-    <p>Si estás ubicado en el Espacio Económico Europeo, tienes derecho a acceder, rectificar, restringir el tratamiento, oponerte al tratamiento y solicitar la supresión de tus datos personales. Para ejercer estos derechos, contáctanos en <a href="mailto:novakuapp@gmail.com">novakuapp@gmail.com</a>.</p>
-  </section>
-
-  <section>
-    <h2>7. Privacidad de los Menores</h2>
-    <p>NOVAKU: History no está dirigida a menores de 13 años. No recopilamos conscientemente información personal de niños menores de 13 años. Si eres padre, madre o tutor y crees que tu hijo nos ha proporcionado información personal, contáctanos inmediatamente en <a href="mailto:novakuapp@gmail.com">novakuapp@gmail.com</a> para que podamos eliminarla.</p>
-    <p>Los usuarios de entre 13 y 16 años deben contar con el consentimiento de sus padres o tutores antes de registrar una cuenta, de acuerdo con las leyes locales aplicables (p. ej., el artículo 8 del RGPD en los estados miembros de la UE).</p>
-  </section>
-
-  <section>
-    <h2>8. Cambios en esta Política</h2>
-    <p>Podemos actualizar esta Política de Privacidad periódicamente. Cualquier cambio se publicará en esta página con una fecha de "Última actualización" actualizada. Para cambios sustanciales, haremos esfuerzos razonables para notificar a los usuarios dentro de la App.</p>
-    <p>Tu uso continuado de la App tras cualquier cambio implica tu aceptación de la Política de Privacidad revisada. Te recomendamos revisar esta política periódicamente.</p>
-  </section>
-
-  <section>
-    <h2>9. Contacto</h2>
-    <div class="highlight-box">
-      <p>Si tienes alguna pregunta, inquietud o solicitud sobre esta Política de Privacidad o el tratamiento de tus datos personales, contáctanos:</p>
-      <p><strong>Novaku</strong><br>
-      Correo electrónico: <a href="mailto:novakuapp@gmail.com">novakuapp@gmail.com</a></p>
+    <div class="container">
+      <div class="app-name">NOVAKU</div>
+      <h1>Política de Privacidad</h1>
+      <p class="meta">Última actualización: 17 de mayo de 2026</p>
+      <nav class="nav-pills" aria-label="Documentos legales">
+        <a href="privacy-policy.html">Privacy Policy (EN)</a>
+        <a href="privacy-policy-es.html" class="active" aria-current="page">Política de Privacidad (ES)</a>
+        <a href="terms.html">Terms of Use (EN)</a>
+        <a href="terms-es.html">Términos de Uso (ES)</a>
+      </nav>
     </div>
-    <p>Nuestro objetivo es responder a todas las consultas relacionadas con la privacidad en un plazo de 30 días.</p>
-  </section>
+  </header>
+  <main>
+    <div class="container">
 
+      <h2>1. Introducción y Responsable del Tratamiento</h2>
+      <p>Novaku ("<strong>nosotros</strong>", "<strong>nos</strong>", "<strong>nuestro</strong>") opera un conjunto de aplicaciones móviles bajo la marca NOVAKU. Somos el Responsable del Tratamiento de los datos personales recopilados a través de nuestras aplicaciones, según lo definido en el Reglamento General de Protección de Datos (RGPD) (UE) 2016/679.</p>
+      <p>Esta Política de Privacidad se aplica a todas las aplicaciones NOVAKU. Los detalles específicos de cada app se describen en la <a href="#section-a">Sección A (NOVAKU: History)</a> y la <a href="#section-b">Sección B (Fan Mosaic)</a> a continuación. Las secciones comunes (1–9) se aplican a todas las apps NOVAKU salvo que se indique lo contrario.</p>
+      <div class="highlight-box">
+        <p><strong>Responsable del Tratamiento:</strong> Novaku</p>
+        <p><strong>Contacto:</strong> <a href="mailto:novakuapp@gmail.com">novakuapp@gmail.com</a></p>
+      </div>
+
+      <h2>2. Información que Recopilamos</h2>
+      <h3>2.1 Información de Cuenta (Opcional)</h3>
+      <p>Crear una cuenta es completamente opcional. Si decides iniciar sesión, recopilamos:</p>
+      <ul>
+        <li><strong>Nombre</strong> y <strong>dirección de correo electrónico</strong> — para identificar la cuenta y permitir la sincronización entre dispositivos.</li>
+        <li><strong>URL de foto de perfil</strong> — proporcionada por Google Sign-In cuando te autenticas con una cuenta de Google. Almacenamos una referencia a la URL; no almacenamos una copia de la imagen en nuestros servidores.</li>
+      </ul>
+      <p>Si no creas una cuenta, no se recopila ningún dato de cuenta. Todo el progreso se almacena localmente en tu dispositivo.</p>
+      <h3>2.2 Preferencias de la Aplicación (Almacenamiento Local)</h3>
+      <p>Almacenamos tus preferencias localmente en tu dispositivo mediante la API DataStore de Android. Estas preferencias son privadas para cada app y no se transmiten a nuestros servidores salvo que hayas iniciado sesión. Ejemplos: selección de idioma y configuración de pantalla.</p>
+      <h3>2.3 Identificador Publicitario (AdMob)</h3>
+      <p>Si usas una versión gratuita de una app NOVAKU, Google AdMob puede recopilar tu <strong>Android Advertising ID</strong> para mostrar publicidad personalizada. Este identificador solo se recopila en cuentas del nivel gratuito y no se recopila de suscriptores premium. Puedes desactivarlo en: <em>Ajustes → Google → Anuncios → Inhabilitar la personalización de anuncios</em>. Actualizar a una suscripción premium elimina los anuncios por completo.</p>
+
+      <h2>3. Servicios de Terceros</h2>
+      <h3>3.1 Supabase</h3>
+      <p>Utilizamos <strong>Supabase</strong> como base de datos backend y proveedor de autenticación. Los datos sincronizados en la nube se almacenan en servidores Supabase ubicados en <strong>Frankfurt, Alemania (AWS eu-central-1)</strong>, dentro de la Unión Europea. Supabase cumple con el RGPD y procesa los datos bajo un Acuerdo de Tratamiento de Datos. <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidad de Supabase</a>.</p>
+      <h3>3.2 Google Sign-In</h3>
+      <p>Google Sign-In es un método de autenticación opcional. Si lo utilizas, Google procesa tus credenciales de autenticación según su propia política. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidad de Google</a>.</p>
+      <h3>3.3 RevenueCat</h3>
+      <p>Utilizamos <strong>RevenueCat</strong> para gestionar las suscripciones dentro de la app (History Pro y NOVAKU Pro). RevenueCat procesa los datos de transacciones de suscripción en nuestro nombre. <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidad de RevenueCat</a>.</p>
+      <h3>3.4 Google AdMob</h3>
+      <p>Los usuarios del nivel gratuito pueden ver anuncios servidos por <strong>Google AdMob</strong>. AdMob puede utilizar el Android Advertising ID y datos de uso para mostrar anuncios relevantes. <a href="https://support.google.com/adspolicy" target="_blank" rel="noopener noreferrer">Política de Anuncios de Google</a> | <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidad de Google</a>.</p>
+
+      <h2>4. Cómo Usamos tu Información</h2>
+      <ul>
+        <li><strong>Prestación del servicio</strong> — ofrecer la funcionalidad principal de la app.</li>
+        <li><strong>Sincronización entre dispositivos</strong> — sincronizar tu progreso cuando tienes una cuenta con sesión iniciada.</li>
+        <li><strong>Mostrar publicidad</strong> — mostrar anuncios a usuarios del nivel gratuito a través de Google AdMob.</li>
+        <li><strong>Gestión de suscripciones</strong> — procesar y validar suscripciones premium mediante RevenueCat.</li>
+        <li><strong>Autenticación</strong> — verificar tu identidad cuando inicias sesión.</li>
+        <li><strong>Mejora de nuestras apps</strong> — analizar datos de uso agregados y anonimizados para identificar áreas de mejora. Estos datos no pueden utilizarse para identificarte.</li>
+      </ul>
+      <div class="warning-box">
+        <p><strong>No vendemos tus datos personales</strong> a terceros bajo ninguna circunstancia.</p>
+      </div>
+
+      <h2>5. Almacenamiento y Seguridad de los Datos</h2>
+      <ul>
+        <li><strong>Almacenamiento local:</strong> Los datos almacenados en tu dispositivo están protegidos por los mecanismos de seguridad de Android, incluido el cifrado AES-256 y el sistema Android Keystore.</li>
+        <li><strong>Almacenamiento en la nube:</strong> Los datos almacenados en Supabase se encuentran en servidores en Frankfurt, Alemania (UE). Todos los datos se transmiten mediante TLS 1.2 o superior y se almacenan en bases de datos cifradas.</li>
+        <li><strong>Preferencias:</strong> Almacenadas mediante la API DataStore de Android, privada para cada aplicación e inaccesible para otras apps de tu dispositivo.</li>
+      </ul>
+      <p>Aunque aplicamos medidas de seguridad estándar del sector, ningún sistema es completamente inmune al acceso no autorizado. No podemos garantizar la seguridad absoluta.</p>
+
+      <h2>6. Tus Derechos</h2>
+      <h3>6.1 Acceso y Portabilidad de Datos</h3>
+      <p>Puedes consultar los datos asociados a tu cuenta directamente en la app NOVAKU correspondiente. Para solicitar una copia en formato portable, contacta con <a href="mailto:novakuapp@gmail.com">novakuapp@gmail.com</a>.</p>
+      <h3>6.2 Eliminación</h3>
+      <p>Puedes solicitar la eliminación de tus datos personales. Las instrucciones específicas para cada app se detallan en la <a href="#section-a">Sección A</a> y la <a href="#section-b">Sección B</a>. También puedes consultar nuestra <a href="delete-account.html">guía de eliminación de cuenta</a>.</p>
+      <h3>6.3 Exclusión de la Publicidad Personalizada</h3>
+      <p>A través de los ajustes del dispositivo: <em>Ajustes → Google → Anuncios → Inhabilitar la personalización de anuncios</em>, o actualizando a una suscripción premium.</p>
+      <h3>6.4 Derechos del RGPD (Residentes en la UE/EEE)</h3>
+      <p>Si te encuentras en la UE o el EEE, tienes derecho a acceder, rectificar, suprimir, limitar, oponerte y portar tus datos personales, y a retirar el consentimiento cuando el tratamiento se base en él. Para ejercer estos derechos, contacta con <a href="mailto:novakuapp@gmail.com">novakuapp@gmail.com</a>. Nos comprometemos a responder en un plazo de 30 días. También puedes presentar una reclamación ante tu autoridad nacional de protección de datos.</p>
+
+      <h2>7. Privacidad de los Menores</h2>
+      <p>Las apps NOVAKU no están dirigidas a menores de 13 años. No recopilamos conscientemente datos personales de menores de 13 años. Si crees que un menor de 13 años nos ha proporcionado datos personales, contáctanos inmediatamente en <a href="mailto:novakuapp@gmail.com">novakuapp@gmail.com</a>. Fan Mosaic tiene una edad mínima de 16 años para el envío de fotos — consulta la <a href="#section-b">Sección B.8</a>.</p>
+
+      <h2>8. Cambios en Esta Política</h2>
+      <p>Podemos actualizar esta Política de Privacidad ocasionalmente. Cualquier cambio se publicará en esta página con una fecha de "Última actualización" revisada. Para cambios relevantes, proporcionaremos una notificación dentro de la app antes de que entren en vigor. El uso continuado de una app NOVAKU tras los cambios implica la aceptación de la política revisada.</p>
+
+      <h2>9. Contacto</h2>
+      <div class="highlight-box">
+        <p><strong>Novaku</strong></p>
+        <p>Correo electrónico: <a href="mailto:novakuapp@gmail.com">novakuapp@gmail.com</a></p>
+        <p>Nos comprometemos a responder a todas las consultas relacionadas con la privacidad en un plazo de <strong>30 días</strong>.</p>
+      </div>
+
+      <hr class="section-divider" id="section-a">
+      <div class="app-section history">
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:4px;">
+          <span class="app-badge history">NOVAKU: History</span>
+          <span style="font-size:0.875rem; color:#888;">Detalles de Privacidad Específicos de la App</span>
+        </div>
+        <h2>Sección A. NOVAKU: History</h2>
+        <p>Los siguientes detalles se aplican específicamente a <strong>NOVAKU: History</strong>, además de las secciones comunes anteriores.</p>
+        <h3>A.1 Datos Adicionales que Recopilamos</h3>
+        <ul>
+          <li>Puntuaciones de cuestionarios, número de intentos y respuestas incorrectas por lección.</li>
+          <li>XP (puntos de experiencia) obtenida y racha de estudio (días consecutivos de actividad).</li>
+          <li>Lecciones completadas, insignias y logros desbloqueados.</li>
+        </ul>
+        <p>Estos datos se almacenan localmente en tu dispositivo. Si has iniciado sesión, también se sincronizan con nuestro backend de Supabase para continuidad entre dispositivos.</p>
+        <h3>A.2 Permisos</h3>
+        <p>NOVAKU: History solicita únicamente el permiso de <strong>INTERNET</strong> — necesario para la sincronización de cuenta, la validación de suscripciones y la visualización de anuncios para usuarios del nivel gratuito. No se solicita acceso a la cámara, ubicación, contactos ni micrófono.</p>
+        <h3>A.3 Eliminación de Datos</h3>
+        <p><strong>Progreso local:</strong> Ve a <em>Perfil → Restablecer todo el progreso</em> en la app para borrar todas las puntuaciones, rachas y logros almacenados localmente.</p>
+        <p><strong>Datos en la nube:</strong> Cierra sesión para eliminar los datos del dispositivo. Para eliminar los datos de nuestros servidores, contacta con <a href="mailto:novakuapp@gmail.com">novakuapp@gmail.com</a> — procesaremos tu solicitud en un plazo de 30 días. Consulta nuestra <a href="delete-account.html">guía de eliminación de cuenta</a>.</p>
+      </div>
+
+      <hr class="section-divider" id="section-b">
+      <div class="app-section fanmosaic">
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:4px;">
+          <span class="app-badge fanmosaic">Fan Mosaic</span>
+          <span style="font-size:0.875rem; color:#888;">Detalles de Privacidad Específicos de la App</span>
+        </div>
+        <h2>Sección B. Fan Mosaic</h2>
+        <p>Los siguientes detalles se aplican específicamente a <strong>Fan Mosaic</strong>, además de las secciones comunes anteriores.</p>
+        <h3>B.1 Por qué Esta App Tiene Consideraciones Adicionales de Privacidad</h3>
+        <p>Fan Mosaic te permite enviar una fotografía personal que pasa a formar parte de un mosaico de equipo visible públicamente para todos los usuarios de la app. Una fotografía es un dato personal según el RGPD, y hacerla públicamente visible requiere tu consentimiento explícito bajo el <strong>GDPR Article 6.1.a</strong>, que otorgas a través de la pantalla de consentimiento dentro de la app antes de subir ninguna foto. Puedes retirar este consentimiento en cualquier momento eliminando tu cuenta.</p>
+        <h3>B.2 Datos Adicionales que Recopilamos</h3>
+        <ul>
+          <li><strong>Tu fotografía</strong> — la foto de perfil que envías para su inclusión en el mosaico público de tu equipo.</li>
+          <li><strong>Nombre para mostrar</strong> — el nombre que aparece en tu perfil de aficionado dentro de la app.</li>
+          <li><strong>Estado de aprobación</strong> — si tu foto enviada está pendiente de revisión, aprobada o rechazada.</li>
+          <li><strong>Marca de tiempo del envío</strong> — la fecha y hora en que enviaste tu foto.</li>
+        </ul>
+        <h3>B.3 Visibilidad Pública de tu Foto</h3>
+        <p>Una vez aprobada tu foto, pasa a formar parte del mosaico de tu equipo elegido, que es <strong>visible públicamente para todos los usuarios</strong> de Fan Mosaic. Al enviar tu foto y otorgar el consentimiento a través de la pantalla en la app, reconoces que tu fotografía se mostrará públicamente dentro de la aplicación.</p>
+        <h3>B.4 Moderación de Fotos (Telegram)</h3>
+        <p>Antes de que tu foto sea incluida en el mosaico público, es revisada por un moderador humano mediante un <strong>bot de Telegram</strong> operado por Novaku. Durante la moderación:</p>
+        <ul>
+          <li>El moderador recibe una <strong>URL firmada con tiempo limitado</strong> que enlaza a tu foto, válida durante 60 segundos. La URL expira automáticamente.</li>
+          <li>El moderador <strong>no ve ningún otro dato personal</strong> asociado a tu cuenta.</li>
+          <li>El moderador <strong>no</strong> conserva una copia permanente de tu foto.</li>
+        </ul>
+        <p>Telegram (Telegram Messenger Inc.) procesa mensajes como parte de este flujo de moderación. <a href="https://telegram.org/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidad de Telegram</a>.</p>
+        <h3>B.5 Permisos</h3>
+        <ul>
+          <li><strong>INTERNET</strong> — necesario para subir tu foto y cargar el mosaico del equipo.</li>
+          <li><strong>CAMERA</strong> — necesario únicamente cuando pulsas explícitamente "Tomar foto". No se accede en ningún otro momento.</li>
+          <li><strong>READ_MEDIA_IMAGES</strong> (Android 13+) o <strong>READ_EXTERNAL_STORAGE</strong> — necesario únicamente cuando pulsas explícitamente "Elegir de la galería". No se accede en ningún otro momento.</li>
+        </ul>
+        <h3>B.6 Retención y Eliminación de Fotos</h3>
+        <p>Tras la eliminación de la cuenta o una solicitud de eliminación de datos:</p>
+        <ul>
+          <li>Tu fotografía se <strong>elimina del almacenamiento en la nube de inmediato</strong>.</li>
+          <li>Tu foto puede continuar apareciendo en <strong>imágenes de mosaico compuestas generadas previamente</strong> (JPEGs pre-renderizados) hasta el siguiente ciclo de regeneración programado, que se ejecuta diariamente a aproximadamente las <strong>02:00 UTC</strong>. Tras ese ciclo, tu foto no aparecerá en ningún mosaico.</li>
+        </ul>
+        <p>Para instrucciones paso a paso, consulta nuestra <a href="delete-account.html">guía de eliminación de cuenta</a>.</p>
+        <h3>B.7 Base Jurídica para el Tratamiento de tu Foto (RGPD)</h3>
+        <ul>
+          <li><strong>Base jurídica principal:</strong> GDPR Article 6.1.a — Consentimiento explícito, otorgado mediante la casilla de verificación en la app antes de subir cualquier foto.</li>
+          <li>Puedes <strong>retirar el consentimiento</strong> en cualquier momento eliminando tu cuenta. La retirada no afecta a la licitud del tratamiento realizado con anterioridad.</li>
+          <li>Tu <strong>derecho de supresión</strong> bajo el GDPR Article 17 es aplicable; consulta la Sección B.6 para los plazos relativos a las imágenes de mosaico compuestas.</li>
+        </ul>
+        <h3>B.8 Edad Mínima</h3>
+        <p>Fan Mosaic requiere que los usuarios tengan al menos <strong>16 años</strong> para enviar una fotografía para el mosaico público, de conformidad con el <strong>GDPR Article 8</strong>. Si crees que un usuario menor de 16 años ha enviado una foto, contáctanos inmediatamente en <a href="mailto:novakuapp@gmail.com">novakuapp@gmail.com</a>.</p>
+      </div>
+
+    </div>
+  </main>
   <footer>
-    <p>NOVAKU: History &mdash; &copy; 2026 Novaku. Todos los derechos reservados.</p>
-    <p style="margin-top:8px;">
-      <a href="privacy-policy.html">Privacy Policy (EN)</a> &nbsp;|&nbsp;
-      <a href="privacy-policy-es.html">Política de Privacidad (ES)</a> &nbsp;|&nbsp;
-      <a href="terms.html">Terms of Service (EN)</a> &nbsp;|&nbsp;
-      <a href="terms-es.html">Términos de Servicio (ES)</a>
-    </p>
+    <div class="container">
+      <p>NOVAKU — &copy; 2026 Novaku. Todos los derechos reservados.</p>
+      <nav class="footer-links">
+        <a href="privacy-policy.html">Privacy Policy (EN)</a>
+        <a href="privacy-policy-es.html">Política de Privacidad (ES)</a>
+        <a href="terms.html">Terms of Use (EN)</a>
+        <a href="terms-es.html">Términos de Uso (ES)</a>
+        <a href="delete-account.html">Eliminar Cuenta</a>
+      </nav>
+    </div>
   </footer>
-</div>
 </body>
 </html>
