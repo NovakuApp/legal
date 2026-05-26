@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Politique de Confidentialité — NOVAKU</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #ffffff; color: #1a1a1a; font-size: 16px; line-height: 1.7; }
+    .container { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+    header { background: #ffffff; border-bottom: 1px solid #e8e8e8; padding: 32px 0 24px; text-align: center; }
+    .app-name { font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #4ECBA1; margin-bottom: 10px; }
+    header h1 { font-size: 2rem; font-weight: 700; color: #1a1a1a; margin-bottom: 8px; }
+    .meta { font-size: 0.875rem; color: #666; margin-bottom: 24px; }
+    .version-pill { display: inline-block; background: #4ECBA1; color: #ffffff; font-size: 0.75rem; font-weight: 700; padding: 4px 10px; border-radius: 12px; letter-spacing: 0.04em; margin-left: 8px; vertical-align: middle; }
+    .nav-pills { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 8px; }
+    .nav-pills a { display: inline-block; padding: 6px 14px; border-radius: 20px; font-size: 0.8125rem; font-weight: 500; text-decoration: none; border: 1.5px solid #e0e0e0; color: #555; transition: border-color 0.15s, color 0.15s, background 0.15s; }
+    .nav-pills a:hover { border-color: #4ECBA1; color: #4ECBA1; }
+    .nav-pills a.active { background: #4ECBA1; border-color: #4ECBA1; color: #ffffff; }
+    .nav-pills .group-label { width: 100%; text-align: center; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: #999; margin: 8px 0 4px; }
+    main { padding: 48px 0 64px; }
+    h2 { font-size: 1.35rem; font-weight: 700; color: #1a1a1a; margin: 40px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #f0f0f0; }
+    h3 { font-size: 1.05rem; font-weight: 600; color: #1a1a1a; margin: 28px 0 10px; }
+    p { margin-bottom: 14px; color: #333; }
+    ul, ol { margin: 10px 0 14px 24px; color: #333; }
+    li { margin-bottom: 6px; }
+    a { color: #4ECBA1; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { font-weight: 600; color: #1a1a1a; }
+    table { width: 100%; border-collapse: collapse; margin: 16px 0 20px; font-size: 0.9rem; }
+    th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid #eee; vertical-align: top; }
+    th { background: #fafafa; font-weight: 700; color: #1a1a1a; }
+    tr:last-child td { border-bottom: none; }
+    .highlight-box { background: #f4fdf9; border: 1.5px solid #4ECBA1; border-radius: 8px; padding: 20px 24px; margin: 24px 0; }
+    .highlight-box p { margin-bottom: 6px; color: #1a1a1a; }
+    .highlight-box p:last-child { margin-bottom: 0; }
+    .warning-box { background: #fff8f0; border: 1.5px solid #f0a830; border-radius: 8px; padding: 18px 22px; margin: 20px 0; }
+    .warning-box p { margin-bottom: 6px; color: #7a4f00; }
+    .warning-box p:last-child { margin-bottom: 0; }
+    .app-section { border-left: 4px solid #e0e0e0; padding-left: 20px; margin: 8px 0; }
+    .app-section.history { border-left-color: #FF6B4A; }
+    .app-section.fanmosaic { border-left-color: #E61D25; }
+    .app-badge { display: inline-block; padding: 3px 12px; border-radius: 12px; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #ffffff; }
+    .app-badge.history { background: #FF6B4A; }
+    .app-badge.fanmosaic { background: #E61D25; }
+    .section-divider { border: none; border-top: 2px solid #f0f0f0; margin: 48px 0 32px; }
+    .app-section h2 { border-bottom-color: transparent; margin-top: 0; }
+    .app-section.history h2 { color: #FF6B4A; }
+    .app-section.fanmosaic h2 { color: #E61D25; }
+    .app-section.history h3 { color: #c9431e; }
+    .app-section.fanmosaic h3 { color: #b01520; }
+    footer { background: #f7f7f7; border-top: 1px solid #e8e8e8; padding: 28px 0; text-align: center; }
+    footer p { font-size: 0.875rem; color: #888; margin-bottom: 12px; }
+    footer p:last-child { margin-bottom: 0; }
+    footer .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+    footer .footer-links a { font-size: 0.8125rem; color: #666; }
+    footer .footer-links a:hover { color: #4ECBA1; }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 0.85em; background: #f4f4f4; padding: 1px 6px; border-radius: 3px; }
+    @media (max-width: 600px) { header h1 { font-size: 1.5rem; } h2 { font-size: 1.15rem; } .highlight-box, .warning-box { padding: 16px 18px; } .app-section { padding-left: 14px; } table { font-size: 0.82rem; } th, td { padding: 8px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="app-name">NOVAKU</div>
+      <h1>Politique de Confidentialité <span class="version-pill">v2.0.0</span></h1>
+      <p class="meta">Date d'entrée en vigueur : 26 mai 2026 · Dernière mise à jour : 26 mai 2026</p>
+      <nav class="nav-pills" aria-label="Langues">
+        <span class="group-label">Politique de Confidentialité</span>
+        <a href="privacy-policy-en.html">EN</a>
+        <a href="privacy-policy-es.html">ES</a>
+        <a href="privacy-policy-fr.html" class="active" aria-current="page">FR</a>
+        <a href="privacy-policy-de.html">DE</a>
+        <a href="privacy-policy-pt.html">PT</a>
+        <a href="privacy-policy-ar.html">AR</a>
+      </nav>
+      <nav class="nav-pills" aria-label="Autres documents" style="margin-top:10px;">
+        <a href="terms-fr.html">Conditions d'utilisation</a>
+        <a href="delete-account.html">Supprimer le compte</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+
+      <div class="highlight-box">
+        <p><strong>En un paragraphe.</strong> Novaku est un développeur indépendant espagnol. Nous collectons le minimum de données nécessaires pour faire fonctionner nos applications et ne les vendons jamais. Pour Fan Mosaic — qui affiche votre photo dans la mosaïque publique de votre équipe — votre <strong>consentement explicite</strong> est la base légale (art. 6.1.a RGPD). Votre photo est examinée par un modérateur humain via Telegram avant publication ; en l'envoyant, vous consentez à ce transfert international au titre de l'<strong>art. 49.1.a RGPD</strong>. Nous n'utilisons <strong>pas</strong> de reconnaissance faciale ni de décision automatisée. Vous pouvez supprimer votre compte depuis l'application à tout moment.</p>
+      </div>
+
+      <h2>1. Responsable du traitement</h2>
+      <p>Novaku (le « <strong>Responsable</strong> », « <strong>nous</strong> ») exploite une suite d'applications mobiles sous la marque NOVAKU, dont <strong>NOVAKU: History</strong> et <strong>Fan Mosaic</strong>. Nous sommes le Responsable des données personnelles collectées via nos applications conformément au <strong>Règlement (UE) 2016/679 (RGPD)</strong> et à la loi espagnole <strong>3/2018 (LOPDGDD)</strong>.</p>
+      <div class="highlight-box">
+        <p><strong>Responsable :</strong> Novaku — développeur indépendant établi en Espagne.</p>
+        <p><strong>Contact confidentialité :</strong> <a href="mailto:novakuapp@gmail.com">novakuapp@gmail.com</a></p>
+        <p><strong>Délégué à la Protection des Données (DPO) :</strong> Non désigné. Selon l'art. 37 RGPD nous n'y sommes pas tenus : nous ne traitons pas de données de catégories particulières (art. 9) et notre traitement n'est pas une surveillance systématique à grande échelle.</p>
+        <p><strong>Représentant UE (art. 27) :</strong> Non applicable. Le Responsable est établi dans l'Union européenne.</p>
+      </div>
+      <p>Cette politique s'applique à toutes les applications NOVAKU. Les sections communes (§1–§16) s'appliquent à chaque application. Les détails spécifiques sont en <a href="#section-a">Section A (NOVAKU: History)</a> et <a href="#section-b">Section B (Fan Mosaic)</a>.</p>
+
+      <h2>2. Catégories de données personnelles</h2>
+      <p>Nous collectons les catégories ci-dessous. « Optionnel » signifie que vous pouvez utiliser les apps sans les fournir ; « obligatoire » signifie que la fonctionnalité ne fonctionnera pas sans elles.</p>
+      <table>
+        <thead><tr><th>Catégorie</th><th>Origine</th><th>Obligatoire / Optionnel</th></tr></thead>
+        <tbody>
+          <tr><td>Adresse e-mail</td><td>Connexion Google</td><td>Obligatoire</td></tr>
+          <tr><td>Nom du profil Google</td><td>Connexion Google</td><td>Optionnel</td></tr>
+          <tr><td>URL de l'avatar</td><td>Connexion Google</td><td>Optionnel</td></tr>
+          <tr><td>Identifiant unique d'utilisateur</td><td>Supabase Auth</td><td>Obligatoire</td></tr>
+          <tr><td>Équipe choisie + nom d'affichage personnalisé</td><td>Vous</td><td>Obligatoire (Fan Mosaic)</td></tr>
+          <tr><td>Photographie (selfie ou image choisie)</td><td>Vous</td><td>Obligatoire (Fan Mosaic uniquement)</td></tr>
+          <tr><td>Horodatage d'envoi + statut d'approbation</td><td>Généré côté serveur</td><td>Automatique</td></tr>
+          <tr><td>Registre de preuve de consentement (date + version + hash + langue)</td><td>App, à l'acceptation de l'écran</td><td>Obligatoire (art. 7.1 RGPD)</td></tr>
+          <tr><td>Android Advertising ID (AAID)</td><td>Appareil</td><td>Obligatoire pour les publicités de la version gratuite</td></tr>
+          <tr><td>Événements de plantage et diagnostic</td><td>SDK Sentry</td><td>Automatique</td></tr>
+          <tr><td>Reçus d'achat (abonnés Pro)</td><td>Google Play Billing → RevenueCat</td><td>Optionnel</td></tr>
+        </tbody>
+      </table>
+      <p>Nous ne collectons <strong>pas</strong> : géolocalisation, contacts, microphone, historique de navigation, modèles biométriques ni aucune catégorie particulière (art. 9 RGPD).</p>
+
+      <h2>3. Finalités et base légale</h2>
+      <table>
+        <thead><tr><th>Finalité</th><th>Données utilisées</th><th>Base légale (RGPD)</th></tr></thead>
+        <tbody>
+          <tr><td>Créer + maintenir votre compte</td><td>E-mail, ID, nom, avatar</td><td>Art. 6.1.b — contrat</td></tr>
+          <tr><td>Afficher votre photo dans la mosaïque publique</td><td>Photo, équipe, nom</td><td>Art. 6.1.a — consentement explicite</td></tr>
+          <tr><td>Modération humaine des photos envoyées</td><td>Photo + URL signée</td><td>Art. 6.1.a + art. 6.1.f intérêt légitime (sécurité de la communauté)</td></tr>
+          <tr><td>Transfert international à Telegram FZ-LLC (EAU) pour modération</td><td>Photo (URL signée, TTL 120 s)</td><td><strong>Art. 49.1.a — consentement explicite au transfert</strong></td></tr>
+          <tr><td>Valider l'abonnement Pro</td><td>Reçu d'achat, ID</td><td>Art. 6.1.b — contrat</td></tr>
+          <tr><td>Afficher des publicités personnalisées ou non (version gratuite)</td><td>AAID</td><td>Art. 6.1.a — consentement via Google UMP</td></tr>
+          <tr><td>Détecter les plantages + corriger les bugs</td><td>Stack traces, breadcrumbs, modèle, OS</td><td>Art. 6.1.f — intérêt légitime à la stabilité</td></tr>
+          <tr><td>Défense contre la fraude / l'abus / la violation des Conditions</td><td>Selon le cas</td><td>Art. 6.1.f — intérêt légitime</td></tr>
+          <tr><td>Respecter les obligations légales (décisions de justice, requêtes CNIL/AEPD)</td><td>Ce qui est requis</td><td>Art. 6.1.c</td></tr>
+        </tbody>
+      </table>
+
+      <h2>4. Destinataires (sous-traitants et autres responsables)</h2>
+      <p>Nous ne partageons des données qu'avec les sous-traitants ci-dessous. Chacun est lié par un accord de sous-traitance conforme à l'art. 28 RGPD.</p>
+      <table>
+        <thead><tr><th>Destinataire</th><th>Rôle</th><th>Pays</th><th>Politique</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Supabase Inc.</strong></td><td>Backend (Postgres + Storage + Edge Functions)</td><td>UE (Francfort, eu-central-1)</td><td><a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer">lien</a></td></tr>
+          <tr><td><strong>Google Ireland Ltd.</strong></td><td>Authentification + AdMob</td><td>UE + monde</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">lien</a></td></tr>
+          <tr><td><strong>RevenueCat Inc.</strong></td><td>Validation des abonnements Pro</td><td>USA</td><td><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">lien</a></td></tr>
+          <tr><td><strong>Functional Software Inc. (Sentry)</strong></td><td>Télémétrie plantages + performance</td><td>USA</td><td><a href="https://sentry.io/privacy/" target="_blank" rel="noopener noreferrer">lien</a></td></tr>
+          <tr><td><strong>Telegram FZ-LLC</strong></td><td>Canal privé de modération (aperçu URL signée uniquement)</td><td>EAU</td><td><a href="https://telegram.org/privacy" target="_blank" rel="noopener noreferrer">lien</a></td></tr>
+        </tbody>
+      </table>
+      <p>Pour la personnalisation publicitaire, Google Ireland Ltd. agit comme <strong>responsable indépendant</strong> sur les données collectées via le SDK AdMob — voir sa propre politique. Nous ne vendons <strong>jamais</strong> de données personnelles.</p>
+
+      <h2>5. Transferts internationaux</h2>
+      <h3>5.1 Transferts couverts par l'adéquation / DPF</h3>
+      <p>Les transferts vers Google, RevenueCat et Sentry (USA) sont protégés par le <strong>Cadre UE–États-Unis de protection des données</strong> (décision d'adéquation du 10 juillet 2023) et complétés par les <strong>Clauses Contractuelles Types (CCT) 2021/914</strong>.</p>
+      <h3>5.2 Transfert à Telegram FZ-LLC (EAU) — consentement explicite (art. 49)</h3>
+      <p>Les EAU ne bénéficient pas d'une décision d'adéquation de l'UE et Telegram n'a pas signé les CCT avec nous. Tout transfert de votre photographie à Telegram pour modération repose donc sur l'<strong>art. 49.1.a RGPD — consentement explicite</strong>, que vous donnez sur l'écran de confidentialité de Fan Mosaic avant tout envoi de photo. Pour un consentement éclairé :</p>
+      <ul>
+        <li>Le destinataire est <strong>Telegram FZ-LLC</strong>, établi à Dubaï, Émirats arabes unis.</li>
+        <li>Le droit émirien peut accorder aux autorités locales des droits d'accès plus larges que ceux de l'UE, sans recours juridictionnel équivalent dans certains cas.</li>
+        <li>Ce que nous transférons : une seule <strong>URL signée (TTL 120 secondes)</strong> pointant vers votre photo. Le lien expire automatiquement et n'est ni intégré ni partagé.</li>
+        <li>Ce que nous ne transférons <strong>pas</strong> : votre e-mail, votre vrai nom, votre équipe ou tout autre donnée personnelle.</li>
+        <li>Vous pouvez retirer votre consentement à tout moment en supprimant votre compte ; les envois ultérieurs deviendront impossibles.</li>
+      </ul>
+
+      <h2>6. Durées de conservation</h2>
+      <table>
+        <thead><tr><th>Donnée</th><th>Durée</th><th>Justification</th></tr></thead>
+        <tbody>
+          <tr><td>Ligne de compte (<code>wc_fans</code>) + auth</td><td>Durée du compte, supprimée sous 30 jours suite à demande</td><td>Prestation + art. 17</td></tr>
+          <tr><td>Photographie (stockage)</td><td>Immédiatement à la suppression du compte</td><td>Art. 17</td></tr>
+          <tr><td>Mosaïques JPG déjà générées</td><td>Jusqu'au prochain cycle de régénération 02h00 UTC (≤ 24 h)</td><td>Technique : les JPG pré-rendus ne peuvent pas être édités rétroactivement</td></tr>
+          <tr><td>Aperçu de modération Telegram</td><td>Au plus 90 jours puis purge</td><td>Audit des contenus rejetés</td></tr>
+          <tr><td>Registre de preuve de consentement (colonnes <code>privacy_*</code>)</td><td><strong>6 ans</strong> après suppression du compte</td><td>Prescription civile espagnole (5 ans, art. 1964 CC) + 1 an de sécurité</td></tr>
+          <tr><td>Événements Sentry</td><td>90 jours</td><td>Horizon de correction de bugs</td></tr>
+          <tr><td>Reçus RevenueCat</td><td>10 ans (obligations fiscales)</td><td>LGT 58/2003 + RD 1619/2012</td></tr>
+          <tr><td>Lien AdMob AAID</td><td>Jusqu'à réinitialisation de l'AAID ou retrait du consentement</td><td>Politique Google</td></tr>
+        </tbody>
+      </table>
+
+      <h2>7. Vos droits</h2>
+      <p>Conformément aux articles 15–22 du RGPD vous pouvez exercer gratuitement :</p>
+      <ul>
+        <li><strong>Accès</strong> (art. 15) — copie de vos données.</li>
+        <li><strong>Rectification</strong> (art. 16) — corriger des données inexactes ou incomplètes.</li>
+        <li><strong>Effacement</strong> (art. 17) — supprimer votre compte depuis Profil → Supprimer le compte ou par e-mail.</li>
+        <li><strong>Limitation</strong> (art. 18) — geler temporairement le traitement.</li>
+        <li><strong>Portabilité</strong> (art. 20) — recevoir vos données dans un format structuré.</li>
+        <li><strong>Opposition</strong> (art. 21) — vous opposer au traitement fondé sur l'intérêt légitime (Sentry, antifraude).</li>
+        <li><strong>Retrait du consentement</strong> (art. 7.3) — à tout moment, sans effet rétroactif.</li>
+        <li><strong>Pas de décision automatisée</strong> (art. 22) — nous n'en prenons pas ayant des effets juridiques.</li>
+      </ul>
+      <p>Pour exercer un droit, écrivez à <a href="mailto:novakuapp@gmail.com">novakuapp@gmail.com</a>. Nous répondons sous 30 jours (extensibles à 90 jours, art. 12.3).</p>
+
+      <h2>8. Droit d'introduire une réclamation</h2>
+      <p>Vous pouvez introduire une réclamation auprès de :</p>
+      <ul>
+        <li><strong>France — CNIL</strong> — <a href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer">cnil.fr</a>.</li>
+        <li><strong>Espagne — AEPD</strong>, C/ Jorge Juan 6, 28001 Madrid — <a href="https://www.aepd.es" target="_blank" rel="noopener noreferrer">aepd.es</a>.</li>
+        <li>Ou l'autorité de contrôle de votre pays de résidence dans l'UE/EEE.</li>
+      </ul>
+
+      <h2>9. Décisions automatisées et profilage</h2>
+      <p>Nous n'utilisons <strong>pas</strong> de décisions automatisées avec effets juridiques (art. 22 RGPD). La modération des photos est effectuée par des <strong>relecteurs humains</strong>.</p>
+      <p>Nous n'effectuons <strong>pas</strong> de reconnaissance faciale, de comparaison biométrique ni d'identification unique à partir de votre photo (considérant 51 RGPD + lignes directrices CEPD 3/2019 et 05/2022 : une photographie ordinaire n'est pas une donnée biométrique sauf si elle est spécifiquement traitée pour identification unique, ce que nous ne faisons pas).</p>
+
+      <h2>10. Source des données</h2>
+      <p>Toutes les données personnelles que nous détenons vous concernent et sont fournies par vous (création de compte, envoi de photo, choix d'équipe et de nom) ou générées comme conséquence de votre utilisation (horodatages, statuts, plantages). Nous n'achetons ni n'enrichissons vos données auprès de courtiers tiers.</p>
+
+      <h2>11. Fournir des données est-il obligatoire ?</h2>
+      <p>La fourniture des données est <strong>volontaire</strong> — vous pouvez ne pas installer ou ne pas vous connecter. Toutefois, certaines fonctionnalités (publier une photo, restaurer Pro) requièrent les données concernées ; sans elles, la fonctionnalité n'est pas disponible.</p>
+
+      <h2>12. Mineurs et âge minimum</h2>
+      <p>Fan Mosaic exige d'avoir au moins <strong>16 ans</strong> conformément à l'art. 8 RGPD et à l'art. 7.1 de la LOPDGDD espagnole (qui abaisse à 14 ans en Espagne, mais nous appliquons la règle plus stricte de 16 ans à toute notre base). NOVAKU: History est adapté dès 13 ans. Si vous pensez qu'un mineur a soumis des données sans consentement parental, contactez-nous, nous agirons sous 7 jours.</p>
+
+      <h2>13. Mesures de sécurité</h2>
+      <ul>
+        <li><strong>Transport :</strong> TLS 1.2+ pour tout le trafic client-serveur.</li>
+        <li><strong>Stockage :</strong> AES-256 au repos (Supabase Storage + Postgres).</li>
+        <li><strong>Authentification :</strong> Google OAuth 2.0 + JWT Supabase avec refresh tokens tournants.</li>
+        <li><strong>Contrôle d'accès :</strong> Row-Level Security (RLS) sur chaque table.</li>
+        <li><strong>Immutabilité du registre de consentement côté serveur :</strong> les quatre colonnes <code>privacy_*</code> sont protégées par un trigger qui rejette toute écrasure d'une valeur déjà scellée.</li>
+        <li><strong>Surface de modération :</strong> les modérateurs ne voient qu'une URL signée de 120 s — sans e-mail, ni nom complet, ni IP.</li>
+        <li><strong>Journalisation :</strong> tous les endpoints destructifs sont audités côté serveur.</li>
+      </ul>
+
+      <h2>14. Cookies et stockage sur l'appareil</h2>
+      <p>Nos applications n'utilisent pas de cookies HTTP (pas de contexte web). Sur l'appareil :</p>
+      <ul>
+        <li>Android Keystore + <em>flutter_secure_storage</em> pour les identifiants sensibles.</li>
+        <li>SharedPreferences pour l'état d'UI non sensible et le registre de consentement avant authentification.</li>
+        <li>SDK Google AdMob + UMP, qui stockent les tokens de consentement localement.</li>
+        <li>SDK Sentry, qui met les plantages en file hors-ligne jusqu'à la prochaine session en ligne.</li>
+      </ul>
+
+      <h2>15. Modifications de cette politique</h2>
+      <p>Cette politique est versionnée en semver (<code>MAJEUR.MINEUR.CORRECTIF</code>) avec date.</p>
+      <ul>
+        <li><strong>MAJEUR</strong> (p. ex. 2.0.0 → 3.0.0) : changements matériels ; dialogue de re-consentement intra-app.</li>
+        <li><strong>MINEUR</strong> (p. ex. 2.0.0 → 2.1.0) : clarifications sans changement de périmètre.</li>
+        <li><strong>CORRECTIF</strong> (p. ex. 2.0.0 → 2.0.1) : purement typographique.</li>
+      </ul>
+      <p>Les versions précédentes sont archivées sur <code>/v/{version}/privacy-policy-fr.html</code>.</p>
+
+      <h2>16. Contact</h2>
+      <div class="highlight-box">
+        <p><strong>Novaku</strong></p>
+        <p>Contact confidentialité : <a href="mailto:novakuapp@gmail.com">novakuapp@gmail.com</a> · Objet : « Confidentialité »</p>
+        <p>Délai de réponse : 30 jours (extensible à 90, art. 12.3).</p>
+      </div>
+
+      <hr class="section-divider" id="section-a">
+      <div class="app-section history">
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:4px;">
+          <span class="app-badge history">NOVAKU: History</span>
+          <span style="font-size:0.875rem; color:#888;">Détails spécifiques à l'app</span>
+        </div>
+        <h2>Section A. NOVAKU: History</h2>
+        <h3>A.1 Données additionnelles</h3>
+        <ul><li>Scores des quiz, tentatives, réponses incorrectes par leçon.</li><li>XP et série d'étude (jours consécutifs).</li><li>Leçons terminées, badges, réussites.</li></ul>
+        <h3>A.2 Permissions demandées</h3>
+        <p>Seul <code>INTERNET</code> + la permission runtime AdMob. Ni caméra, ni microphone, ni géolocalisation, ni contacts.</p>
+        <h3>A.3 Suppression</h3>
+        <p>Profil → Réinitialiser efface l'appareil. Les données cloud se suppriment via le <a href="delete-account.html">guide de suppression</a>.</p>
+      </div>
+
+      <hr class="section-divider" id="section-b">
+      <div class="app-section fanmosaic">
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:4px;">
+          <span class="app-badge fanmosaic">Fan Mosaic</span>
+          <span style="font-size:0.875rem; color:#888;">Détails spécifiques à l'app</span>
+        </div>
+        <h2>Section B. Fan Mosaic</h2>
+
+        <h3>B.1 Pourquoi Fan Mosaic a des considérations supplémentaires</h3>
+        <p>Fan Mosaic publie votre photographie dans la mosaïque publique de votre équipe. La photographie d'une personne identifiable est une donnée personnelle au sens du RGPD. <strong>Ce n'est PAS une donnée biométrique</strong> dans notre contexte — nous n'effectuons aucun « traitement technique spécifique » d'identification unique (considérant 51 + CEPD 3/2019), aucun régime art. 9 ne s'applique. La base légale est votre consentement explicite art. 6.1.a, enregistré sur l'écran de confidentialité.</p>
+
+        <h3>B.2 Données additionnelles</h3>
+        <ul>
+          <li>La photographie (Supabase Storage, Francfort).</li>
+          <li>L'équipe choisie + votre nom personnalisé.</li>
+          <li>Statut d'approbation (<code>pending</code>, <code>approved</code>, <code>rejected</code>).</li>
+          <li>Horodatage d'envoi + de première approbation.</li>
+          <li>Preuve de consentement (art. 7.1) : les quatre colonnes <code>privacy_*</code>.</li>
+        </ul>
+
+        <h3>B.3 Visibilité publique</h3>
+        <p>Une fois approuvée, votre photo fait partie d'une mosaïque publique dans l'application et peut apparaître dans toute capture ou tout partage. En acceptant l'écran de confidentialité vous reconnaissez cette visibilité.</p>
+
+        <h3>B.4 Modération (Telegram, EAU)</h3>
+        <p>Avant publication, chaque photo est examinée par un modérateur humain via un canal Telegram privé géré par Novaku.</p>
+        <ul>
+          <li>Le modérateur ne reçoit qu'une <strong>URL signée de 120 secondes</strong> — pas le fichier.</li>
+          <li>Aucune donnée identifiante n'apparaît à côté de la photo.</li>
+          <li>Telegram est exploité par <strong>Telegram FZ-LLC, Dubaï, Émirats arabes unis</strong>. Transfert au titre de <strong>l'art. 49.1.a RGPD</strong>.</li>
+          <li>Le message de modération persiste 90 jours au maximum, puis est purgé.</li>
+        </ul>
+
+        <h3>B.5 Preuve de consentement — les quatre colonnes <code>privacy_*</code></h3>
+        <ul>
+          <li><code>privacy_accepted_at</code> — horodatage UTC d'acceptation.</li>
+          <li><code>privacy_policy_version</code> — version semver du document.</li>
+          <li><code>privacy_policy_hash</code> — SHA-256 du texte anglais canonique.</li>
+          <li><code>privacy_consent_locale</code> — langue lue (en, es, fr, de, pt, ar).</li>
+        </ul>
+
+        <h3>B.6 Permissions demandées</h3>
+        <ul>
+          <li><code>INTERNET</code> — toujours.</li>
+          <li><code>CAMERA</code> — uniquement « Prendre une photo ».</li>
+          <li><code>READ_MEDIA_IMAGES</code> (Android 13+) / <code>READ_EXTERNAL_STORAGE</code> — uniquement « Choisir dans la galerie ».</li>
+          <li><code>com.google.android.gms.permission.AD_ID</code> — auto-accordée, requise par AdMob ≥ 21.</li>
+        </ul>
+
+        <h3>B.7 Publicités (AdMob + UMP)</h3>
+        <p>La version gratuite affiche des publicités Google AdMob. Au premier lancement dans l'EEE/UK/CH, le Google User Messaging Platform (UMP) affiche un dialogue de consentement. Vous pouvez le rouvrir depuis <em>Profil → Options de confidentialité</em>. Avec Pro, aucune publicité n'est affichée.</p>
+
+        <h3>B.8 Régénération de la mosaïque après suppression</h3>
+        <p>À la suppression du compte, votre photo est retirée du stockage immédiatement. Les JPG déjà rendus persistent jusqu'à la prochaine régénération quotidienne à <strong>02h00 UTC</strong>. Sous 24 heures, votre photo n'apparaît plus dans aucune mosaïque.</p>
+      </div>
+
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <p>NOVAKU — &copy; 2026 Novaku. Tous droits réservés.</p>
+      <p>En cas de conflit entre versions linguistiques, la version <strong>espagnole</strong> de cette Politique prévaut.</p>
+      <nav class="footer-links">
+        <a href="privacy-policy-en.html">EN</a>
+        <a href="privacy-policy-es.html">ES</a>
+        <a href="privacy-policy-fr.html">Confidentialité (FR)</a>
+        <a href="privacy-policy-de.html">DE</a>
+        <a href="privacy-policy-pt.html">PT</a>
+        <a href="privacy-policy-ar.html">AR</a>
+        <a href="terms-fr.html">Conditions</a>
+        <a href="delete-account.html">Supprimer le compte</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

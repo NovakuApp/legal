@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conditions d'utilisation — NOVAKU</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #ffffff; color: #1a1a1a; line-height: 1.7; font-size: 16px; }
+    .container { max-width: 820px; margin: 0 auto; padding: 0 24px; }
+    header { background: #ffffff; border-bottom: 3px solid #4ECBA1; padding: 32px 0 24px; }
+    header .brand { font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #4ECBA1; margin-bottom: 6px; }
+    header h1 { font-size: 2rem; font-weight: 800; color: #1a1a1a; line-height: 1.2; }
+    header .meta { margin-top: 8px; font-size: 14px; color: #666; }
+    .version-pill { display: inline-block; background: #4ECBA1; color: #ffffff; font-size: 0.7rem; font-weight: 700; padding: 4px 10px; border-radius: 12px; letter-spacing: 0.04em; margin-left: 8px; vertical-align: middle; }
+    nav.lang-bar { background: #f7f7f7; border-bottom: 1px solid #e8e8e8; padding: 12px 0; }
+    nav.lang-bar .container { display: flex; gap: 8px; flex-wrap: wrap; }
+    nav.lang-bar a { display: inline-block; padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: 500; text-decoration: none; color: #555; background: #ffffff; border: 1px solid #ddd; transition: background 0.15s, color 0.15s, border-color 0.15s; }
+    nav.lang-bar a:hover { background: #f0faf6; border-color: #4ECBA1; color: #1a1a1a; }
+    nav.lang-bar a.active { background: #4ECBA1; border-color: #4ECBA1; color: #ffffff; font-weight: 700; }
+    main { padding: 48px 0 64px; }
+    h2 { font-size: 1.25rem; font-weight: 700; color: #1a1a1a; margin-top: 40px; margin-bottom: 12px; }
+    h3 { font-size: 1rem; font-weight: 700; color: #1a1a1a; margin-top: 24px; margin-bottom: 8px; }
+    p { margin-bottom: 14px; color: #333; }
+    ul, ol { margin: 10px 0 14px 22px; color: #333; }
+    li { margin-bottom: 6px; }
+    a { color: #4ECBA1; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { font-weight: 600; color: #1a1a1a; }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 0.85em; background: #f4f4f4; padding: 1px 6px; border-radius: 3px; }
+    .highlight-box { border: 2px solid #4ECBA1; border-radius: 8px; padding: 16px 20px; background: #f0faf6; margin: 20px 0; }
+    .highlight-box p { margin-bottom: 4px; color: #1a1a1a; }
+    .highlight-box p:last-child { margin-bottom: 0; }
+    .warning-box { border: 2px solid #f5b700; border-radius: 8px; padding: 16px 20px; background: #fffbea; margin: 20px 0; }
+    .warning-box p { margin-bottom: 0; color: #1a1a1a; font-size: 14px; }
+    .section-divider { border: none; border-top: 2px solid #e8e8e8; margin: 48px 0 40px; }
+    .app-section { border-radius: 8px; padding: 32px; margin: 40px 0; background: #fafafa; }
+    .app-section.history { border-left: 5px solid #FF6B4A; }
+    .app-section.fanmosaic { border-left: 5px solid #E61D25; }
+    .app-section h2 { margin-top: 0; }
+    .app-badge { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; border-radius: 4px; padding: 3px 10px; margin-bottom: 12px; }
+    .app-badge.history { background: #FF6B4A; color: #ffffff; }
+    .app-badge.fanmosaic { background: #E61D25; color: #ffffff; }
+    footer { background: #1a1a1a; color: #ccc; padding: 40px 0; text-align: center; }
+    footer .footer-brand { font-size: 15px; font-weight: 700; color: #4ECBA1; margin-bottom: 8px; }
+    footer .footer-copy { font-size: 13px; margin-bottom: 8px; color: #aaa; }
+    footer .footer-note { font-size: 12px; color: #888; margin-bottom: 20px; }
+    footer .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+    footer .footer-links a { color: #aaa; font-size: 13px; text-decoration: none; padding: 4px 10px; border-radius: 4px; transition: color 0.15s; }
+    footer .footer-links a:hover { color: #4ECBA1; }
+    @media (max-width: 600px) { header h1 { font-size: 1.5rem; } .app-section { padding: 20px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="brand">NOVAKU</div>
+      <h1>Conditions d'utilisation <span class="version-pill">v2.0.0</span></h1>
+      <p class="meta">Date d'entrée en vigueur : 26 mai 2026 · Dernière mise à jour : 26 mai 2026</p>
+    </div>
+  </header>
+  <nav class="lang-bar" aria-label="Langues">
+    <div class="container">
+      <a href="terms-en.html">EN</a>
+      <a href="terms-es.html">ES</a>
+      <a href="terms-fr.html" class="active" aria-current="page">Conditions · FR</a>
+      <a href="terms-de.html">DE</a>
+      <a href="terms-pt.html">PT</a>
+      <a href="terms-ar.html">AR</a>
+      <a href="privacy-policy-fr.html">Politique de Confidentialité</a>
+      <a href="delete-account.html">Supprimer le compte</a>
+    </div>
+  </nav>
+  <main>
+    <div class="container">
+
+      <h2>1. Acceptation des Conditions</h2>
+      <p>En téléchargeant, installant ou utilisant toute application NOVAKU (« <strong>App</strong> »), vous acceptez ces Conditions d'utilisation (« <strong>Conditions</strong> »). Ces Conditions constituent un accord juridiquement contraignant entre vous (« <strong>Utilisateur</strong> », « <strong>vous</strong> ») et Novaku (« <strong>Novaku</strong> », « <strong>nous</strong> »). Si vous n'êtes pas d'accord, n'utilisez aucune application NOVAKU. L'utilisation continue après mise à jour des Conditions vaut acceptation des Conditions mises à jour.</p>
+
+      <h2>2. Description des Services</h2>
+      <p>Novaku développe et publie une suite d'applications mobiles, dont <strong>NOVAKU: History</strong> (quiz éducatifs) et <strong>Fan Mosaic</strong> (mosaïque photo de supporters sportifs). Chaque application peut proposer un niveau gratuit et un niveau premium. Les conditions spécifiques par app sont en <a href="#section-a">§A</a> et <a href="#section-b">§B</a>.</p>
+
+      <h2>3. Éligibilité et âge</h2>
+      <p>Vous devez avoir au moins <strong>16 ans</strong> pour utiliser Fan Mosaic. NOVAKU: History convient dès 13 ans. Si vous n'atteignez pas l'âge applicable, vous ne pouvez pas utiliser les apps. En acceptant ces Conditions vous déclarez remplir la condition d'âge.</p>
+
+      <h2>4. Création de compte</h2>
+      <h3>4.1 Inscription volontaire</h3>
+      <p>La connexion se fait via Google. Vous pouvez créer exactement un compte par identité Google.</p>
+      <h3>4.2 Responsabilités du compte</h3>
+      <p>Vous êtes responsable de la confidentialité de vos identifiants et de toute activité sous votre compte. Avertissez-nous à <a href="mailto:novakuapp@gmail.com">novakuapp@gmail.com</a> si vous constatez un accès non autorisé.</p>
+      <h3>4.3 Résiliation par vous</h3>
+      <p>Vous pouvez supprimer votre compte à tout moment depuis Profil → Supprimer le compte ou via le <a href="delete-account.html">guide de suppression</a>.</p>
+      <h3>4.4 Résiliation par nous</h3>
+      <p>Nous pouvons résilier ou suspendre votre compte, avec ou sans préavis, en cas de manquement à ces Conditions (notamment §6 Usages interdits ou §B.3 Normes de contenu), de fraude, d'abus, ou pour exécuter une décision de justice ou requête d'autorité.</p>
+
+      <h2>5. Contenu généré par l'utilisateur (Fan Mosaic uniquement)</h2>
+      <h3>5.1 Votre contenu</h3>
+      <p>« Votre Contenu » désigne toute photographie et tout nom d'affichage que vous envoyez via Fan Mosaic.</p>
+      <h3>5.2 Licence limitée à Novaku</h3>
+      <p>Vous accordez à Novaku une <strong>licence mondiale, gratuite, non exclusive</strong> pour héberger, stocker, reproduire, adapter pour traitement d'image (redimensionnement, découpage en tuiles), exposer publiquement et distribuer Votre Contenu <strong>uniquement aux fins d'exploitation et de promotion du Service</strong>. La licence prend fin lorsque Votre Contenu est retiré de nos systèmes suite à une demande de suppression, sauf pour la persistance temporaire dans les mosaïques composites décrite en §B et les copies conservées par nos sous-traitants selon leurs propres politiques.</p>
+      <h3>5.3 Sous-licence</h3>
+      <p>La licence du §5.2 est sous-licenciable à nos sous-traitants (Supabase, Google, Telegram pour modération) <strong>uniquement</strong> dans la stricte mesure nécessaire à la fourniture du Service.</p>
+      <h3>5.4 Pas de vente</h3>
+      <p>Nous ne vendrons <strong>jamais</strong> Votre Contenu à des tiers.</p>
+      <h3>5.5 Déclarations et garanties</h3>
+      <p>En envoyant Votre Contenu, vous déclarez et garantissez que :</p>
+      <ul>
+        <li>Vous figurez sur la photo, ou vous détenez le droit et le consentement sans équivoque de chaque personne identifiable.</li>
+        <li>Votre Contenu n'enfreint aucun droit de propriété intellectuelle, à la vie privée, à l'image ou autre droit de tiers.</li>
+        <li>Votre Contenu ne contient pas de matériel illégal, diffamatoire, obscène, haineux ou violent.</li>
+        <li>Vous avez au moins 16 ans.</li>
+      </ul>
+      <h3>5.6 Conservation de la propriété</h3>
+      <p>Vous conservez la propriété de Votre Contenu. La licence du §5.2 ne transfère aucun droit d'auteur.</p>
+
+      <h2>6. Usages interdits</h2>
+      <p>Vous vous engagez à ne pas :</p>
+      <ul>
+        <li>Faire de l'ingénierie inverse, décompiler ou désassembler une application NOVAKU, sauf dans les limites autorisées par la Directive 2009/24/CE art. 6.</li>
+        <li>Copier, redistribuer, vendre ou sous-licencier le contenu des apps sans autorisation écrite préalable.</li>
+        <li>Scraper ou récolter du contenu par des moyens automatisés.</li>
+        <li>Contourner les mesures de sécurité, le contrôle d'accès ou les restrictions premium.</li>
+        <li>Utiliser une app NOVAKU à des fins frauduleuses, trompeuses ou illégales.</li>
+        <li>Téléverser des malwares ou perturber l'infrastructure ou les serveurs.</li>
+        <li>Tenter un accès non autorisé à d'autres comptes ou systèmes.</li>
+        <li>Utiliser le Service pour harceler, intimider ou menacer.</li>
+        <li>Vous faire passer pour quelqu'un d'autre ou usurper une affiliation.</li>
+      </ul>
+      <p>Les manquements peuvent entraîner la résiliation immédiate et, le cas échéant, des poursuites.</p>
+
+      <h2>7. Propriété intellectuelle</h2>
+      <h3>7.1 Titularité</h3>
+      <p>Les apps NOVAKU, noms, logos, designs UI, code, contenus et matériels sont la propriété de Novaku ou lui sont concédés, et sont protégés par la législation applicable.</p>
+      <h3>7.2 Licence à vous</h3>
+      <p>Nous vous accordons une licence limitée, non exclusive, non transférable et révocable pour accéder et utiliser les apps à des fins personnelles non commerciales.</p>
+      <h3>7.3 Marques</h3>
+      <p>Les noms d'équipes, drapeaux et marques de tiers appartiennent à leurs titulaires respectifs et sont utilisés à des fins de référence nominative. Fan Mosaic est une application de supporters indépendante et <strong>n'est pas affiliée, parrainée ou soutenue</strong> par la FIFA, la Coupe du Monde FIFA™, ni aucune fédération ou club.</p>
+
+      <h2>8. Abonnements Premium (Pro)</h2>
+      <h3>8.1 Plans</h3>
+      <ul>
+        <li><strong>History Pro</strong> — applicable uniquement dans NOVAKU: History.</li>
+        <li><strong>NOVAKU Pro</strong> — applicable à l'écosystème NOVAKU complet.</li>
+      </ul>
+      <h3>8.2 Facturation et renouvellement</h3>
+      <p>Les abonnements sont traités via Google Play Billing et validés par RevenueCat. Ils se renouvellent automatiquement sauf résiliation au moins 24 h avant le renouvellement.</p>
+      <h3>8.3 Résiliation</h3>
+      <p>Résiliez via le Play Store → profil → Paiements et abonnements → Abonnements → choisir NOVAKU → Résilier. L'accès continue jusqu'à la fin de la période en cours.</p>
+      <h3>8.4 Remboursements</h3>
+      <p>Les remboursements sont traités par Google Play selon sa politique. Nous ne pouvons pas en traiter directement.</p>
+      <h3>8.5 Restauration</h3>
+      <p>Connectez-vous avec le compte Google ayant acheté Pro ou utilisez « Restaurer les achats ».</p>
+      <h3>8.6 Changement de prix</h3>
+      <p>Nous pouvons modifier le prix pour les périodes futures. Les abonnés actuels sont prévenus au moins 7 jours à l'avance et peuvent résilier avant l'application du nouveau prix.</p>
+
+      <h2>9. Droit de rétractation UE — Renonciation contenu numérique</h2>
+      <div class="warning-box">
+        <p><strong>En souscrivant à un abonnement Pro</strong>, vous consentez expressément à l'exécution immédiate du contenu numérique (expérience sans publicité et fonctionnalités Pro) et reconnaissez perdre votre <strong>droit de rétractation de 14 jours</strong> au titre de la <strong>Directive 2011/83/UE art. 16, m</strong>.</p>
+      </div>
+
+      <h2>10. Exclusion de garanties</h2>
+      <p>LES APPS SONT FOURNIES « EN L'ÉTAT » ET « SELON DISPONIBILITÉ », SANS GARANTIE D'AUCUNE SORTE, EXPRESSE OU IMPLICITE. Nous ne garantissons pas un fonctionnement ininterrompu ou sans erreur, ni l'absence de virus. Certaines juridictions n'autorisent pas l'exclusion des garanties implicites ; ce qui précède ne s'applique pas dans la mesure interdite par la loi.</p>
+      <p>Rien dans cette section ne limite les garanties irréductibles au titre du droit impératif de la consommation européen (Directive (UE) 2019/770) ou du droit national applicable.</p>
+
+      <h2>11. Limitation de responsabilité</h2>
+      <p>Dans la mesure maximale permise par la loi applicable, Novaku ne peut être tenue responsable des dommages indirects, accessoires, spéciaux, consécutifs ou punitifs liés à votre usage des apps.</p>
+      <p>En tout état de cause, la responsabilité totale cumulée de Novaku envers vous ne dépassera pas :</p>
+      <ul>
+        <li>Abonnés Pro : le total payé à Novaku au cours des douze (12) mois précédant la demande.</li>
+        <li>Utilisateurs gratuits : <strong>cent euros (100 €)</strong>.</li>
+      </ul>
+      <p>Résidents UE : notre responsabilité est limitée seulement dans la mesure permise par le droit impératif de la consommation de votre pays.</p>
+
+      <h2>12. Indemnisation</h2>
+      <p>Vous acceptez de défendre, indemniser et garantir Novaku contre toute réclamation, responsabilité, dommage ou frais (y compris les honoraires juridiques raisonnables) découlant de :</p>
+      <ul>
+        <li>Votre Contenu (Fan Mosaic), y compris toute allégation d'atteinte aux droits d'un tiers.</li>
+        <li>Votre manquement à ces Conditions.</li>
+        <li>Votre violation d'une loi ou d'un droit de tiers.</li>
+      </ul>
+
+      <h2>13. Suspension et retrait de contenu</h2>
+      <p>Nous pouvons, à notre seule discrétion et sans préavis, retirer Votre Contenu ou suspendre votre compte lorsque Votre Contenu (a) viole les normes §B.3, (b) fait l'objet d'une réclamation crédible de tiers, ou (c) fait l'objet d'une décision judiciaire ou d'un requête des autorités. Lorsque possible, nous expliquons la raison dans l'app ou par e-mail.</p>
+
+      <h2>14. Notification et retrait</h2>
+      <p>Si vous estimez qu'un contenu enfreint vos droits ou ces Conditions, envoyez une notification détaillée à <a href="mailto:novakuapp@gmail.com">novakuapp@gmail.com</a> en identifiant :</p>
+      <ul>
+        <li>Le contenu litigieux.</li>
+        <li>Le droit prétendument violé.</li>
+        <li>Vos coordonnées et une déclaration sur l'honneur d'exactitude.</li>
+      </ul>
+      <p>Nous examinerons et répondrons sous 7 jours. Nous respectons les art. 6–9 du Règlement (UE) 2022/2065 (DSA).</p>
+
+      <h2>15. Mises à jour des apps</h2>
+      <p>Nous pouvons publier des mises à jour à tout moment. Certaines peuvent ajouter ou retirer des fonctionnalités. Nous ne garantissons pas la disponibilité permanente d'une fonctionnalité spécifique, sauf si le droit impératif de la consommation l'exige.</p>
+
+      <h2>16. Confidentialité</h2>
+      <p>Notre <a href="privacy-policy-fr.html">Politique de Confidentialité</a> décrit le traitement des données personnelles. L'acceptation de la Politique est requise pour utiliser Fan Mosaic.</p>
+
+      <h2>17. Services tiers</h2>
+      <p>Les apps interagissent avec Google, Supabase, RevenueCat, Sentry et Telegram. Leur usage est soumis à leurs propres conditions et politiques.</p>
+
+      <h2>18. Loi applicable et juridiction</h2>
+      <p>Ces Conditions sont régies par le droit <strong>espagnol</strong>, sans application des règles de conflit. Sauf droit impératif de la consommation, tout litige relèvera de la juridiction exclusive des tribunaux de <strong>Pampelune (Navarre), Espagne</strong>.</p>
+      <p>Les consommateurs de l'UE peuvent en outre nous adresser leur réclamation directement à <a href="mailto:novakuapp@gmail.com">novakuapp@gmail.com</a>. La plateforme européenne de Règlement en Ligne des Litiges (RLL) a été abandonnée le 20 juillet 2025.</p>
+      <p>Hors UE, vous et Novaku convenez que tout litige sera résolu par arbitrage individuel contraignant à la Cour d'Arbitrage de Madrid, en langue anglaise, sauf disposition impérative contraire.</p>
+
+      <h2>19. Divisibilité et accord intégral</h2>
+      <p>Si une disposition est inexécutable, le reste demeure en vigueur. Ces Conditions, avec la Politique de Confidentialité, constituent l'accord intégral.</p>
+
+      <h2>20. Modifications de ces Conditions</h2>
+      <p>Ces Conditions sont versionnées avec la Politique. Les modifications matérielles sont annoncées dans l'app au moins 30 jours avant leur entrée en vigueur ; pour les utilisateurs gratuits l'usage continu vaut acceptation. Les abonnés Pro peuvent résilier avant la date d'effet.</p>
+
+      <h2>21. Contact</h2>
+      <div class="highlight-box">
+        <p><strong>Novaku</strong></p>
+        <p>Contact juridique et général : <a href="mailto:novakuapp@gmail.com">novakuapp@gmail.com</a></p>
+        <p>Délai de réponse : 30 jours.</p>
+      </div>
+
+      <hr class="section-divider" />
+
+      <div class="app-section history" id="section-a">
+        <span class="app-badge history">NOVAKU: History</span>
+        <h2>§A. NOVAKU: History — Conditions spécifiques</h2>
+        <h3>§A.1 Description</h3>
+        <p>Application éducative avec quiz, leçons, XP et réussites. Deux niveaux :</p>
+        <ul>
+          <li><strong>Gratuit :</strong> accès complet avec publicités Google AdMob.</li>
+          <li><strong>Premium (History Pro / NOVAKU Pro) :</strong> sans publicité + Quiz personnalisé.</li>
+        </ul>
+        <h3>§A.2 Contenu utilisateur</h3>
+        <p>History ne permet pas actuellement d'envoyer du contenu public. §5 ne s'applique pas.</p>
+      </div>
+
+      <div class="app-section fanmosaic" id="section-b">
+        <span class="app-badge fanmosaic">Fan Mosaic</span>
+        <h2>§B. Fan Mosaic — Conditions spécifiques</h2>
+        <h3>§B.1 Description</h3>
+        <p>Application de supporters indépendante qui permet d'envoyer une photo pour l'inclure dans une mosaïque publique. Les mosaïques sont régénérées quotidiennement.</p>
+        <h3>§B.2 Conditions d'envoi</h3>
+        <p>En envoyant une photo vous confirmez §5.5 et accordez la licence §5.2 restreinte à l'exploitation et à la promotion du Service.</p>
+        <h3>§B.3 Normes de contenu</h3>
+        <p>Les photos doivent :</p>
+        <ul>
+          <li>Vous représenter uniquement (le titulaire du compte).</li>
+          <li>Convenir à tout public — pas de nudité, violence, haine ou symboles offensants.</li>
+          <li>Ne pas enfreindre les droits de tiers.</li>
+          <li>Ne pas contenir d'informations de contact personnelles.</li>
+        </ul>
+        <h3>§B.4 Modération</h3>
+        <p>Chaque photo est examinée par un modérateur humain via un canal Telegram privé. L'approbation ou le rejet est à la seule discrétion de Novaku.</p>
+        <h3>§B.5 Retrait de la licence photo</h3>
+        <p>Vous pouvez retirer la licence en supprimant votre compte. Votre photo est retirée du stockage immédiatement. Les mosaïques composites déjà rendues persistent jusqu'à la prochaine régénération quotidienne à 02h00 UTC (≤ 24 h).</p>
+        <h3>§B.6 Niveaux</h3>
+        <ul>
+          <li><strong>Gratuit :</strong> accès complet avec publicités AdMob (dialogue UMP en EEE/UK/CH).</li>
+          <li><strong>Premium (NOVAKU Pro) :</strong> sans publicité + futures fonctionnalités premium.</li>
+        </ul>
+        <h3>§B.7 Aucune affiliation sportive</h3>
+        <p>Fan Mosaic est une application de supporters indépendante. <strong>Non</strong> affiliée, soutenue ou parrainée par la FIFA, la Coupe du Monde FIFA™, ni aucune fédération ou club.</p>
+      </div>
+
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="footer-brand">NOVAKU</div>
+      <div class="footer-copy">&copy; 2026 Novaku. Tous droits réservés.</div>
+      <div class="footer-note">En cas de conflit entre versions linguistiques, la version espagnole de ces Conditions prévaut.</div>
+      <div class="footer-links">
+        <a href="terms-en.html">EN</a>
+        <a href="terms-es.html">ES</a>
+        <a href="terms-fr.html">Conditions (FR)</a>
+        <a href="terms-de.html">DE</a>
+        <a href="terms-pt.html">PT</a>
+        <a href="terms-ar.html">AR</a>
+        <a href="privacy-policy-fr.html">Confidentialité</a>
+        <a href="delete-account.html">Supprimer le compte</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>سياسة الخصوصية — NOVAKU</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Naskh Arabic", "Tahoma", sans-serif; background: #ffffff; color: #1a1a1a; font-size: 16px; line-height: 1.85; }
+    .container { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+    header { background: #ffffff; border-bottom: 1px solid #e8e8e8; padding: 32px 0 24px; text-align: center; }
+    .app-name { font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #4ECBA1; margin-bottom: 10px; }
+    header h1 { font-size: 2rem; font-weight: 700; color: #1a1a1a; margin-bottom: 8px; }
+    .meta { font-size: 0.875rem; color: #666; margin-bottom: 24px; }
+    .version-pill { display: inline-block; background: #4ECBA1; color: #ffffff; font-size: 0.75rem; font-weight: 700; padding: 4px 10px; border-radius: 12px; letter-spacing: 0.04em; margin-inline-start: 8px; vertical-align: middle; }
+    .nav-pills { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 8px; }
+    .nav-pills a { display: inline-block; padding: 6px 14px; border-radius: 20px; font-size: 0.8125rem; font-weight: 500; text-decoration: none; border: 1.5px solid #e0e0e0; color: #555; transition: border-color 0.15s, color 0.15s, background 0.15s; }
+    .nav-pills a:hover { border-color: #4ECBA1; color: #4ECBA1; }
+    .nav-pills a.active { background: #4ECBA1; border-color: #4ECBA1; color: #ffffff; }
+    .nav-pills .group-label { width: 100%; text-align: center; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: #999; margin: 8px 0 4px; }
+    main { padding: 48px 0 64px; }
+    h2 { font-size: 1.35rem; font-weight: 700; color: #1a1a1a; margin: 40px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #f0f0f0; }
+    h3 { font-size: 1.05rem; font-weight: 600; color: #1a1a1a; margin: 28px 0 10px; }
+    p { margin-bottom: 14px; color: #333; }
+    ul, ol { margin: 10px 0 14px; padding-inline-start: 24px; color: #333; }
+    li { margin-bottom: 6px; }
+    a { color: #4ECBA1; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { font-weight: 600; color: #1a1a1a; }
+    table { width: 100%; border-collapse: collapse; margin: 16px 0 20px; font-size: 0.9rem; }
+    th, td { text-align: start; padding: 10px 12px; border-bottom: 1px solid #eee; vertical-align: top; }
+    th { background: #fafafa; font-weight: 700; color: #1a1a1a; }
+    tr:last-child td { border-bottom: none; }
+    .highlight-box { background: #f4fdf9; border: 1.5px solid #4ECBA1; border-radius: 8px; padding: 20px 24px; margin: 24px 0; }
+    .highlight-box p { margin-bottom: 6px; color: #1a1a1a; }
+    .highlight-box p:last-child { margin-bottom: 0; }
+    .warning-box { background: #fff8f0; border: 1.5px solid #f0a830; border-radius: 8px; padding: 18px 22px; margin: 20px 0; }
+    .warning-box p { margin-bottom: 6px; color: #7a4f00; }
+    .warning-box p:last-child { margin-bottom: 0; }
+    .app-section { border-inline-start: 4px solid #e0e0e0; padding-inline-start: 20px; margin: 8px 0; }
+    .app-section.history { border-inline-start-color: #FF6B4A; }
+    .app-section.fanmosaic { border-inline-start-color: #E61D25; }
+    .app-badge { display: inline-block; padding: 3px 12px; border-radius: 12px; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #ffffff; }
+    .app-badge.history { background: #FF6B4A; }
+    .app-badge.fanmosaic { background: #E61D25; }
+    .section-divider { border: none; border-top: 2px solid #f0f0f0; margin: 48px 0 32px; }
+    .app-section h2 { border-bottom-color: transparent; margin-top: 0; }
+    .app-section.history h2 { color: #FF6B4A; }
+    .app-section.fanmosaic h2 { color: #E61D25; }
+    .app-section.history h3 { color: #c9431e; }
+    .app-section.fanmosaic h3 { color: #b01520; }
+    footer { background: #f7f7f7; border-top: 1px solid #e8e8e8; padding: 28px 0; text-align: center; }
+    footer p { font-size: 0.875rem; color: #888; margin-bottom: 12px; }
+    footer p:last-child { margin-bottom: 0; }
+    footer .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+    footer .footer-links a { font-size: 0.8125rem; color: #666; }
+    footer .footer-links a:hover { color: #4ECBA1; }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 0.85em; background: #f4f4f4; padding: 1px 6px; border-radius: 3px; direction: ltr; unicode-bidi: embed; display: inline-block; }
+    @media (max-width: 600px) { header h1 { font-size: 1.5rem; } h2 { font-size: 1.15rem; } .highlight-box, .warning-box { padding: 16px 18px; } .app-section { padding-inline-start: 14px; } table { font-size: 0.82rem; } th, td { padding: 8px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="app-name">NOVAKU</div>
+      <h1>سياسة الخصوصية <span class="version-pill">v2.0.0</span></h1>
+      <p class="meta">تاريخ السريان: 26 مايو 2026 · آخر تحديث: 26 مايو 2026</p>
+      <nav class="nav-pills" aria-label="اللغات">
+        <span class="group-label">سياسة الخصوصية</span>
+        <a href="privacy-policy-en.html">EN</a>
+        <a href="privacy-policy-es.html">ES</a>
+        <a href="privacy-policy-fr.html">FR</a>
+        <a href="privacy-policy-de.html">DE</a>
+        <a href="privacy-policy-pt.html">PT</a>
+        <a href="privacy-policy-ar.html" class="active" aria-current="page">AR</a>
+      </nav>
+      <nav class="nav-pills" aria-label="وثائق أخرى" style="margin-top:10px;">
+        <a href="terms-ar.html">شروط الاستخدام</a>
+        <a href="delete-account.html">حذف الحساب</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+
+      <div class="highlight-box">
+        <p><strong>باختصار.</strong> Novaku مطوّر مستقل إسباني. نجمع الحد الأدنى من البيانات اللازمة لتشغيل تطبيقاتنا ولا نبيعها أبدًا. في Fan Mosaic — الذي يعرض صورتك في الفسيفساء العامة لمنتخبك — تكون <strong>موافقتك الصريحة</strong> هي الأساس القانوني (المادة 6/1/أ من اللائحة العامة لحماية البيانات). قبل النشر تتم مراجعة صورتك من قِبَل مشرف بشري عبر Telegram؛ بإرسالك إياها، فإنك توافق على هذا النقل الدولي بموجب <strong>المادة 49/1/أ</strong>. <strong>لا</strong> نستخدم التعرف على الوجوه ولا أي قرارات آلية. يمكنك حذف حسابك من داخل التطبيق في أي وقت.</p>
+      </div>
+
+      <h2>1. المتحكم في البيانات</h2>
+      <p>تُشغّل Novaku ("<strong>المتحكم</strong>"، "<strong>نحن</strong>") مجموعة من التطبيقات تحت علامة NOVAKU، تشمل <strong>NOVAKU: History</strong> و<strong>Fan Mosaic</strong>. نحن المتحكم في البيانات الشخصية المجموعة عبر تطبيقاتنا وفقًا <strong>للائحة (الاتحاد الأوروبي) 2016/679 (GDPR)</strong> والقانون الإسباني <strong>LOPDGDD 3/2018</strong>.</p>
+      <div class="highlight-box">
+        <p><strong>المتحكم:</strong> Novaku — مطوّر مستقل مقره إسبانيا.</p>
+        <p><strong>التواصل بشأن الخصوصية:</strong> <a href="mailto:novakuapp@gmail.com">novakuapp@gmail.com</a></p>
+        <p><strong>مسؤول حماية البيانات (DPO):</strong> غير معيّن. لا تُلزمنا المادة 37 بذلك — لا نعالج بيانات الفئات الخاصة (المادة 9) ولا نُجري مراقبة منهجية واسعة النطاق.</p>
+        <p><strong>الممثل في الاتحاد الأوروبي (المادة 27):</strong> غير منطبق. المتحكم مستقر في الاتحاد الأوروبي.</p>
+      </div>
+      <p>تنطبق هذه السياسة على جميع تطبيقات NOVAKU. الأقسام المشتركة (§1–§16) تنطبق على كل تطبيق. التفاصيل الخاصة في <a href="#section-a">القسم A (NOVAKU: History)</a> و<a href="#section-b">القسم B (Fan Mosaic)</a>.</p>
+
+      <h2>2. فئات البيانات الشخصية</h2>
+      <table>
+        <thead><tr><th>الفئة</th><th>المصدر</th><th>إلزامي / اختياري</th></tr></thead>
+        <tbody>
+          <tr><td>البريد الإلكتروني</td><td>تسجيل دخول Google</td><td>إلزامي</td></tr>
+          <tr><td>اسم ملف Google</td><td>تسجيل دخول Google</td><td>اختياري</td></tr>
+          <tr><td>رابط الصورة الرمزية</td><td>تسجيل دخول Google</td><td>اختياري</td></tr>
+          <tr><td>معرّف المستخدم الفريد</td><td>Supabase Auth</td><td>إلزامي</td></tr>
+          <tr><td>المنتخب المختار + الاسم المخصص</td><td>أنت</td><td>إلزامي (Fan Mosaic)</td></tr>
+          <tr><td>الفوتوغرافية (سيلفي أو صورة مختارة)</td><td>أنت</td><td>إلزامي (Fan Mosaic فقط)</td></tr>
+          <tr><td>طابع زمني للإرسال + حالة الموافقة</td><td>يُولَّد على الخادم</td><td>تلقائي</td></tr>
+          <tr><td>سجل إثبات الموافقة (وقت + إصدار + هاش + لغة)</td><td>التطبيق عند قبول الشاشة</td><td>إلزامي (المادة 7/1)</td></tr>
+          <tr><td>معرّف إعلانات أندرويد (AAID)</td><td>الجهاز</td><td>إلزامي لإعلانات النسخة المجانية</td></tr>
+          <tr><td>أحداث الأعطال والتشخيص</td><td>SDK Sentry</td><td>تلقائي</td></tr>
+          <tr><td>إيصالات الشراء (مشتركو Pro)</td><td>Google Play Billing → RevenueCat</td><td>اختياري</td></tr>
+        </tbody>
+      </table>
+      <p><strong>لا</strong> نجمع: الموقع، جهات الاتصال، الميكروفون، سجل التصفح، قوالب بيومترية أو أي فئة خاصة (المادة 9).</p>
+
+      <h2>3. الأغراض والأساس القانوني</h2>
+      <table>
+        <thead><tr><th>الغرض</th><th>البيانات المستخدمة</th><th>الأساس القانوني (GDPR)</th></tr></thead>
+        <tbody>
+          <tr><td>إنشاء وصيانة الحساب</td><td>بريد، معرّف، اسم، صورة</td><td>المادة 6/1/ب — العقد</td></tr>
+          <tr><td>عرض صورتك في الفسيفساء العامة</td><td>الصورة، المنتخب، الاسم</td><td>المادة 6/1/أ — موافقة صريحة</td></tr>
+          <tr><td>المراجعة البشرية للصور المُرسلة</td><td>الصورة + رابط موقّع</td><td>6/1/أ + 6/1/و مصلحة مشروعة (سلامة المجتمع)</td></tr>
+          <tr><td>النقل الدولي إلى Telegram FZ-LLC (الإمارات) للمراجعة</td><td>الصورة (رابط موقّع، TTL 120 ث)</td><td><strong>المادة 49/1/أ — موافقة صريحة على النقل</strong></td></tr>
+          <tr><td>التحقق من اشتراك Pro</td><td>إيصال الشراء، المعرّف</td><td>المادة 6/1/ب — العقد</td></tr>
+          <tr><td>عرض إعلانات مخصصة أو غير مخصصة (النسخة المجانية)</td><td>AAID</td><td>المادة 6/1/أ — موافقة عبر Google UMP</td></tr>
+          <tr><td>اكتشاف الأعطال وإصلاح الأخطاء</td><td>Stack traces، breadcrumbs، الموديل، نظام التشغيل</td><td>المادة 6/1/و — مصلحة مشروعة في الاستقرار</td></tr>
+          <tr><td>الدفاع ضد الاحتيال / إساءة الاستخدام / مخالفة الشروط</td><td>حسب الحاجة</td><td>المادة 6/1/و — مصلحة مشروعة</td></tr>
+          <tr><td>الامتثال للالتزامات القانونية (أوامر قضائية، طلبات الجهات)</td><td>حسب الاقتضاء</td><td>المادة 6/1/ج</td></tr>
+        </tbody>
+      </table>
+
+      <h2>4. المستلمون (معالجون فرعيون ومتحكمون آخرون)</h2>
+      <p>نشارك البيانات فقط مع المعالجين أدناه. كل منهم مرتبط بعقد معالجة وفق المادة 28.</p>
+      <table>
+        <thead><tr><th>المستلم</th><th>الدور</th><th>الدولة</th><th>السياسة</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Supabase Inc.</strong></td><td>الواجهة الخلفية (Postgres + Storage + Edge Functions)</td><td>الاتحاد الأوروبي (فرانكفورت)</td><td><a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer">رابط</a></td></tr>
+          <tr><td><strong>Google Ireland Ltd.</strong></td><td>المصادقة + AdMob</td><td>الاتحاد الأوروبي + عالميًا</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">رابط</a></td></tr>
+          <tr><td><strong>RevenueCat Inc.</strong></td><td>التحقق من اشتراكات Pro</td><td>الولايات المتحدة</td><td><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">رابط</a></td></tr>
+          <tr><td><strong>Functional Software Inc. (Sentry)</strong></td><td>قياس الأعطال والأداء</td><td>الولايات المتحدة</td><td><a href="https://sentry.io/privacy/" target="_blank" rel="noopener noreferrer">رابط</a></td></tr>
+          <tr><td><strong>Telegram FZ-LLC</strong></td><td>قناة مراجعة خاصة (معاينة عبر رابط موقّع فقط)</td><td>الإمارات</td><td><a href="https://telegram.org/privacy" target="_blank" rel="noopener noreferrer">رابط</a></td></tr>
+        </tbody>
+      </table>
+      <p>بالنسبة لتخصيص الإعلانات، تعمل Google Ireland Ltd. <strong>كمتحكم مستقل</strong> على البيانات التي تجمعها عبر SDK AdMob. <strong>لن</strong> نبيع البيانات الشخصية أبدًا.</p>
+
+      <h2>5. عمليات النقل الدولي</h2>
+      <h3>5.1 عمليات النقل المغطاة بالكفاية / DPF</h3>
+      <p>عمليات النقل إلى Google وRevenueCat وSentry (الولايات المتحدة) محمية بـ<strong>إطار الاتحاد الأوروبي/الولايات المتحدة لخصوصية البيانات</strong> (قرار الكفاية في 10 يوليو 2023) ومُكمَّلة بـ<strong>البنود التعاقدية النموذجية (SCC) 2021/914</strong>.</p>
+      <h3>5.2 النقل إلى Telegram FZ-LLC (الإمارات) — موافقة صريحة (المادة 49)</h3>
+      <p>الإمارات ليس لها قرار كفاية من الاتحاد الأوروبي ولم توقع Telegram على SCC معنا. لذلك يعتمد أي نقل لصورتك إلى Telegram للمراجعة على <strong>المادة 49/1/أ — الموافقة الصريحة</strong>، التي تُمنح في شاشة الخصوصية قبل أي رفع للصور:</p>
+      <ul>
+        <li>المستلم هو <strong>Telegram FZ-LLC</strong>، ومقرها دبي، الإمارات العربية المتحدة.</li>
+        <li>قد يمنح القانون الإماراتي السلطات المحلية صلاحيات وصول أوسع من تلك في الاتحاد الأوروبي، دون انتصاف قضائي مكافئ في بعض الحالات.</li>
+        <li>ما ننقله: رابط <strong>موقّع واحد (TTL 120 ثانية)</strong> يُشير إلى صورتك. ينتهي تلقائيًا.</li>
+        <li>ما <strong>لا</strong> ننقله: بريدك، اسمك الحقيقي، اختيارك أو أي بيانات شخصية أخرى.</li>
+        <li>يمكنك سحب الموافقة في أي وقت عبر حذف حسابك.</li>
+      </ul>
+
+      <h2>6. فترات الاحتفاظ</h2>
+      <table>
+        <thead><tr><th>البيانات</th><th>الاحتفاظ</th><th>المبرر</th></tr></thead>
+        <tbody>
+          <tr><td>صف الحساب (<code>wc_fans</code>) + التوثيق</td><td>طوال عمر الحساب، يُحذف خلال 30 يومًا من الطلب</td><td>تقديم الخدمة + المادة 17</td></tr>
+          <tr><td>الصورة (التخزين)</td><td>فور حذف الحساب</td><td>المادة 17</td></tr>
+          <tr><td>صور الفسيفساء JPG المُولّدة</td><td>حتى دورة التجديد التالية الساعة 02:00 UTC (≤ 24 س)</td><td>تقني: لا يمكن تعديل JPG مُسبقًا</td></tr>
+          <tr><td>رسالة المراجعة في Telegram</td><td>حتى التنقية اليدوية (بحد أقصى 90 يومًا)</td><td>تدقيق للمحتوى المرفوض</td></tr>
+          <tr><td>سجل إثبات الموافقة (أعمدة <code>privacy_*</code>)</td><td><strong>6 سنوات</strong> بعد حذف الحساب</td><td>التقادم المدني الإسباني (5 سنوات، المادة 1964) + سنة هامش</td></tr>
+          <tr><td>أحداث Sentry</td><td>90 يومًا</td><td>أفق إصلاح الأخطاء</td></tr>
+          <tr><td>إيصالات RevenueCat</td><td>10 سنوات (التزامات ضريبية)</td><td>LGT 58/2003 + RD 1619/2012</td></tr>
+          <tr><td>ربط AdMob AAID</td><td>حتى تعيد ضبط AAID أو تسحب الموافقة</td><td>سياسة Google</td></tr>
+        </tbody>
+      </table>
+
+      <h2>7. حقوقك</h2>
+      <ul>
+        <li><strong>الوصول</strong> (المادة 15)</li>
+        <li><strong>التصحيح</strong> (المادة 16)</li>
+        <li><strong>المحو</strong> (المادة 17) — الملف الشخصي ← حذف الحساب أو البريد.</li>
+        <li><strong>التقييد</strong> (المادة 18)</li>
+        <li><strong>قابلية النقل</strong> (المادة 20)</li>
+        <li><strong>الاعتراض</strong> (المادة 21) — على المعالجة المبنية على المصلحة المشروعة.</li>
+        <li><strong>سحب الموافقة</strong> (المادة 7/3) — في أي وقت دون أثر على المعالجة السابقة المشروعة.</li>
+        <li><strong>لا قرارات آلية</strong> (المادة 22) — لا نتخذها.</li>
+      </ul>
+      <p>للممارسة، اكتب إلى <a href="mailto:novakuapp@gmail.com">novakuapp@gmail.com</a>. نرد خلال 30 يومًا (قابلة للتمديد إلى 90 وفق 12/3).</p>
+
+      <h2>8. الحق في تقديم شكوى أمام سلطة الإشراف</h2>
+      <ul>
+        <li><strong>إسبانيا — AEPD</strong>، شارع جورخي خوان 6، 28001 مدريد — <a href="https://www.aepd.es" target="_blank" rel="noopener noreferrer">aepd.es</a>.</li>
+        <li>أو السلطة الإشرافية لبلد إقامتك في الاتحاد الأوروبي / المنطقة الاقتصادية الأوروبية.</li>
+      </ul>
+
+      <h2>9. القرارات الآلية وإنشاء الملفات الشخصية</h2>
+      <p><strong>لا</strong> نستخدم قرارات آلية ذات آثار قانونية أو مماثلة (المادة 22). المراجعة بشرية.</p>
+      <p><strong>لا</strong> نُجري تعرّفًا على الوجوه أو مطابقة بيومترية أو تحديدًا فريدًا للأشخاص من صورتك (الحيثية 51 + توجيهات EDPB 3/2019 و05/2022).</p>
+
+      <h2>10. مصدر البيانات</h2>
+      <p>جميع البيانات الشخصية لدينا تأتي منك (إنشاء الحساب، رفع الصورة، اختيار المنتخب والاسم) أو تُولَّد بفعل استخدامك للخدمة. لا نشتري ولا نُثري البيانات من وسطاء.</p>
+
+      <h2>11. هل تقديم البيانات إلزامي؟</h2>
+      <p>تقديم البيانات <strong>اختياري</strong> — يمكنك ألا تستخدم التطبيق. لكن بعض الميزات (نشر صورة، استرجاع Pro) تتطلب البيانات؛ بدونها لا تتوفر الميزة.</p>
+
+      <h2>12. القصّر والحد الأدنى للسن</h2>
+      <p>يتطلب Fan Mosaic أن يكون عمرك <strong>16 عامًا</strong> على الأقل وفق المادة 8 من اللائحة والمادة 7/1 من LOPDGDD (تخفض إلى 14 داخل إسبانيا، لكننا نطبق 16 على كل قاعدتنا). تطبيق NOVAKU: History مناسب من سن 13. لمعالجة بلاغات قاصرين، نتصرف خلال 7 أيام.</p>
+
+      <h2>13. تدابير الأمان</h2>
+      <ul>
+        <li><strong>النقل:</strong> TLS 1.2+.</li>
+        <li><strong>التخزين:</strong> AES-256 في حالة السكون.</li>
+        <li><strong>المصادقة:</strong> Google OAuth 2.0 + JWT Supabase مع توكنات تحديث دوارة.</li>
+        <li><strong>التحكم في الوصول:</strong> Row-Level Security (RLS) على كل جدول.</li>
+        <li><strong>عدم قابلية تغيير سجل الموافقة:</strong> أعمدة <code>privacy_*</code> الأربعة محمية بمشغل قاعدة بيانات.</li>
+        <li><strong>سطح المراجعة:</strong> رابط موقّع لمدة 120 ثانية فقط.</li>
+        <li><strong>السجلات:</strong> النقاط النهائية المُدمِّرة مدققة.</li>
+      </ul>
+
+      <h2>14. ملفات تعريف الارتباط والتخزين على الجهاز</h2>
+      <p>تطبيقاتنا لا تستخدم ملفات تعريف HTTP. على الجهاز:</p>
+      <ul>
+        <li>Android Keystore + <em>flutter_secure_storage</em>.</li>
+        <li>SharedPreferences لحالة الواجهة وسجل الموافقة قبل تسجيل الدخول.</li>
+        <li>SDKs Google AdMob + UMP.</li>
+        <li>SDK Sentry مع تخزين مؤقت دون اتصال.</li>
+      </ul>
+
+      <h2>15. التعديلات على هذه السياسة</h2>
+      <p>هذه السياسة موسومة بـ semver (<code>كبير.صغير.تصحيح</code>) مع تاريخ.</p>
+      <ul>
+        <li><strong>كبير</strong>: تغييرات جوهرية + إعادة موافقة داخل التطبيق.</li>
+        <li><strong>صغير</strong>: توضيحات دون توسيع النطاق.</li>
+        <li><strong>تصحيح</strong>: مطبعي فقط.</li>
+      </ul>
+      <p>الإصدارات السابقة في <code>/v/{الإصدار}/privacy-policy-ar.html</code>.</p>
+
+      <h2>16. التواصل</h2>
+      <div class="highlight-box">
+        <p><strong>Novaku</strong></p>
+        <p>التواصل بشأن الخصوصية: <a href="mailto:novakuapp@gmail.com">novakuapp@gmail.com</a> · العنوان: "خصوصية"</p>
+        <p>مهلة الرد: 30 يومًا (قابلة للتمديد إلى 90).</p>
+      </div>
+
+      <hr class="section-divider" id="section-a">
+      <div class="app-section history">
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:4px;">
+          <span class="app-badge history">NOVAKU: History</span>
+          <span style="font-size:0.875rem; color:#888;">تفاصيل خاصة بالتطبيق</span>
+        </div>
+        <h2>القسم A. NOVAKU: History</h2>
+        <h3>A.1 بيانات إضافية</h3>
+        <ul><li>نقاط الاختبارات، المحاولات، الأخطاء لكل درس.</li><li>XP والسلسلة الدراسية.</li><li>الدروس المكتملة، الشارات، الإنجازات.</li></ul>
+        <h3>A.2 الأذونات</h3>
+        <p>فقط <code>INTERNET</code> + إذن AdMob للتشغيل. لا كاميرا ولا ميكروفون ولا موقع ولا جهات اتصال.</p>
+        <h3>A.3 الحذف</h3>
+        <p>الملف الشخصي ← إعادة التعيين يمسح الجهاز. بيانات السحابة عبر <a href="delete-account.html">دليل الحذف</a>.</p>
+      </div>
+
+      <hr class="section-divider" id="section-b">
+      <div class="app-section fanmosaic">
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:4px;">
+          <span class="app-badge fanmosaic">Fan Mosaic</span>
+          <span style="font-size:0.875rem; color:#888;">تفاصيل خاصة بالتطبيق</span>
+        </div>
+        <h2>القسم B. Fan Mosaic</h2>
+
+        <h3>B.1 لماذا يتطلب Fan Mosaic اعتبارات إضافية</h3>
+        <p>ينشر Fan Mosaic صورتك في الفسيفساء العامة لمنتخبك. صورة شخص يمكن التعرف عليه هي بيانات شخصية وفق اللائحة. <strong>ليست بيانات بيومترية</strong> في سياقنا — لا نُجري "معالجة تقنية محددة" للتعرف الفريد (الحيثية 51 + EDPB 3/2019). الأساس القانوني: الموافقة الصريحة المادة 6/1/أ.</p>
+
+        <h3>B.2 بيانات إضافية</h3>
+        <ul>
+          <li>الصورة نفسها (Supabase Storage، فرانكفورت).</li>
+          <li>المنتخب + اسمك المخصص.</li>
+          <li>الحالة (<code>pending</code>، <code>approved</code>، <code>rejected</code>) وسبب الرفض إن وجد.</li>
+          <li>طوابع الإرسال والموافقة الأولى.</li>
+          <li>إثبات الموافقة (المادة 7/1): الأعمدة <code>privacy_*</code> الأربعة.</li>
+        </ul>
+
+        <h3>B.3 العرض العلني</h3>
+        <p>بمجرد الموافقة، تصبح صورتك جزءًا من فسيفساء علنية وقد تظهر في أي لقطة شاشة أو مشاركة. بقبول الشاشة فإنك تعترف بهذا.</p>
+
+        <h3>B.4 المراجعة (Telegram، الإمارات)</h3>
+        <p>قبل النشر تُراجَع كل صورة من قِبَل مشرف بشري عبر قناة Telegram خاصة.</p>
+        <ul>
+          <li>يستلم المشرف فقط <strong>رابطًا موقّعًا لمدة 120 ثانية</strong> — لا الملف.</li>
+          <li>لا تظهر أي بيانات تعريفية بجانب الصورة.</li>
+          <li>تشغّل Telegram <strong>Telegram FZ-LLC، دبي، الإمارات</strong>. النقل بموجب <strong>المادة 49/1/أ</strong>.</li>
+          <li>تبقى رسالة المراجعة 90 يومًا كحدٍ أقصى.</li>
+        </ul>
+
+        <h3>B.5 إثبات الموافقة — الأعمدة <code>privacy_*</code> الأربعة</h3>
+        <ul>
+          <li><code>privacy_accepted_at</code> — الطابع الزمني UTC للقبول.</li>
+          <li><code>privacy_policy_version</code> — إصدار semver للمستند.</li>
+          <li><code>privacy_policy_hash</code> — SHA-256 للنص الإنجليزي الرسمي.</li>
+          <li><code>privacy_consent_locale</code> — اللغة المقروءة (en, es, fr, de, pt, ar).</li>
+        </ul>
+
+        <h3>B.6 الأذونات</h3>
+        <ul>
+          <li><code>INTERNET</code> — دائمًا.</li>
+          <li><code>CAMERA</code> — فقط عند الضغط على "التقاط صورة".</li>
+          <li><code>READ_MEDIA_IMAGES</code> (Android 13+) / <code>READ_EXTERNAL_STORAGE</code> — فقط عند الضغط على "اختيار من المعرض".</li>
+          <li><code>com.google.android.gms.permission.AD_ID</code> — مُمنوح تلقائيًا، تتطلبه AdMob ≥ 21.</li>
+        </ul>
+
+        <h3>B.7 الإعلانات (AdMob + UMP)</h3>
+        <p>تعرض النسخة المجانية إعلانات Google AdMob. في أول إطلاق داخل EEA/UK/CH تعرض Google UMP نافذة موافقة. يمكنك إعادة فتحها من <em>الملف الشخصي ← خيارات الخصوصية</em>. Pro لا يعرض إعلانات.</p>
+
+        <h3>B.8 إعادة توليد الفسيفساء بعد الحذف</h3>
+        <p>عند حذف حسابك تُحذف الصورة من التخزين فورًا. تُستبدل JPGs الموجودة في دورة التجديد التالية الساعة <strong>02:00 UTC</strong>. خلال 24 ساعة لن تظهر صورتك في أي فسيفساء جديدة.</p>
+      </div>
+
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <p>NOVAKU — &copy; 2026 Novaku. جميع الحقوق محفوظة.</p>
+      <p>في حال التعارض بين النسخ اللغوية، تسود النسخة <strong>الإسبانية</strong> من هذه السياسة.</p>
+      <nav class="footer-links">
+        <a href="privacy-policy-en.html">EN</a>
+        <a href="privacy-policy-es.html">ES</a>
+        <a href="privacy-policy-fr.html">FR</a>
+        <a href="privacy-policy-de.html">DE</a>
+        <a href="privacy-policy-pt.html">PT</a>
+        <a href="privacy-policy-ar.html">الخصوصية (AR)</a>
+        <a href="terms-ar.html">الشروط</a>
+        <a href="delete-account.html">حذف الحساب</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
