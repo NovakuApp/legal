@@ -46,7 +46,7 @@
 
     <div class="app-name">NOVAKU</div>
     <h1>Delete Your Account</h1>
-    <p class="meta">Last updated: May 17, 2026</p>
+    <p class="meta">Effective date: 26 May 2026 · Version 2.0.0</p>
     <p class="intro">Follow the instructions below for your NOVAKU app to delete your account and associated data.</p>
     <p class="jump-links">
       Jump to: <a href="#history">NOVAKU: History</a> &nbsp;|&nbsp; <a href="#fanmosaic">Fan Mosaic</a>
@@ -104,8 +104,9 @@
       <h3>What happens immediately</h3>
       <ul>
         <li>Your account credentials and profile data are removed from the device.</li>
-        <li>Your photograph is permanently deleted from cloud storage.</li>
+        <li>Your photograph is permanently deleted from cloud storage (Supabase, Frankfurt).</li>
         <li>Your fan profile is removed from the leaderboard.</li>
+        <li>Your <code>wc_fans</code> row is deleted from our database; the proof-of-consent record (<code>privacy_*</code> columns) is retained as required by §6 of the <a href="privacy-policy-en.html">Privacy Policy</a> (6 years post-deletion, for GDPR Art. 7.1 evidence).</li>
       </ul>
 
       <h3>Important: Mosaic regeneration</h3>
@@ -138,13 +139,19 @@
     <footer>
       <p>NOVAKU — &copy; 2026 Novaku. All rights reserved.</p>
       <nav>
-        <a href="privacy-policy.html">Privacy Policy (EN)</a>
+        <a href="privacy-policy-en.html">Privacy (EN)</a>
         <span>|</span>
-        <a href="privacy-policy-es.html">Política de Privacidad (ES)</a>
+        <a href="privacy-policy-es.html">ES</a>
         <span>|</span>
-        <a href="terms.html">Terms of Use (EN)</a>
+        <a href="privacy-policy-fr.html">FR</a>
         <span>|</span>
-        <a href="terms-es.html">Términos de Uso (ES)</a>
+        <a href="privacy-policy-de.html">DE</a>
+        <span>|</span>
+        <a href="privacy-policy-pt.html">PT</a>
+        <span>|</span>
+        <a href="privacy-policy-ar.html">AR</a>
+        <span>|</span>
+        <a href="terms-en.html">Terms</a>
       </nav>
     </footer>
 
