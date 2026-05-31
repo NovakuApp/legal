@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>OAuth Callback — NOVAKU</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+           background: #f7f7f7; color: #1a1a1a; padding: 40px 20px; line-height: 1.55; }
+    .container { max-width: 640px; margin: 0 auto; background: #fff; border-radius: 12px;
+                 padding: 32px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+    .brand { font-size: 0.75rem; letter-spacing: 0.15em; color: #4ECBA1;
+             text-transform: uppercase; font-weight: 700; margin-bottom: 6px; }
+    h1 { font-size: 1.4rem; margin: 0 0 16px; }
+    p { margin: 0 0 12px; color: #333; }
+    .status { display: inline-block; padding: 4px 12px; border-radius: 12px;
+              font-size: 0.8rem; font-weight: 700; margin-bottom: 16px;
+              letter-spacing: 0.04em; text-transform: uppercase; }
+    .status.success { background: #e8faf2; color: #1a7a55; }
+    .status.error { background: #fff0f0; color: #a02020; }
+    .status.info { background: #f0f4ff; color: #2a4a8a; }
+    pre { background: #f4f4f4; padding: 14px 16px; border-radius: 8px; margin: 8px 0;
+          overflow-x: auto; font-size: 0.85rem; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+          user-select: all; word-break: break-all; white-space: pre-wrap; }
+    .copybtn { background: #4ECBA1; color: #fff; border: none; padding: 9px 18px;
+               border-radius: 6px; font-weight: 600; font-size: 0.9rem; cursor: pointer;
+               margin: 4px 0 16px; transition: background 0.15s; }
+    .copybtn:hover { background: #3eaf8a; }
+    .copybtn.copied { background: #2a8a5e; }
+    .meta { font-size: 0.85rem; color: #666; margin-top: 14px; }
+    .meta code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; font-size: 0.85em; }
+    .warning { background: #fff8f0; border-left: 3px solid #f0a830; padding: 10px 14px;
+               border-radius: 4px; font-size: 0.85rem; color: #7a4f00; margin: 14px 0; }
+    .footer { margin-top: 28px; padding-top: 16px; border-top: 1px solid #eee;
+              font-size: 0.78rem; color: #999; }
+    .footer a { color: #4ECBA1; text-decoration: none; }
+    .footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="brand">NOVAKU</div>
+    <h1>OAuth Callback</h1>
+    <div id="output"></div>
+    <div class="footer">
+      Internal redirect endpoint for NOVAKU's first-party publishing tool. Not a user-facing page.
+      See our <a href="privacy-policy-en.html">Privacy Policy</a> and <a href="terms-en.html">Terms of Use</a>.
+    </div>
+  </div>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const code = params.get('code');
+    const state = params.get('state');
+    const scopes = params.get('scopes');
+    const error = params.get('error') || params.get('error_description');
+    const output = document.getElementById('output');
+
+    function escapeHtml(s) {
+      return String(s).replace(/[&<>"']/g, c => ({
+        '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+      }[c]));
+    }
+
+    if (error) {
+      output.innerHTML = `
+        <div class="status error">Authorization failed</div>
+        <p>The OAuth provider returned an error:</p>
+        <pre>${escapeHtml(error)}</pre>
+        <p class="meta">Return to the admin tool and retry. If the issue persists, verify the redirect URI registered in the provider's developer dashboard matches this page exactly.</p>
+      `;
+    } else if (code) {
+      output.innerHTML = `
+        <div class="status success">Authorization received</div>
+        <p>Copy the authorization code below into the developer machine to exchange it for an access token.</p>
+        <pre id="codebox">${escapeHtml(code)}</pre>
+        <button class="copybtn" id="copy" type="button">Copy code</button>
+        <div class="warning"><strong>Time-sensitive:</strong> authorization codes typically expire within 60 seconds and can be exchanged only once.</div>
+        <p class="meta">
+          <strong>State:</strong> <code>${escapeHtml(state || '(none)')}</code><br>
+          <strong>Scopes granted:</strong> <code>${escapeHtml(scopes || '(none)')}</code>
+        </p>
+      `;
+      document.getElementById('copy').addEventListener('click', async () => {
+        try {
+          await navigator.clipboard.writeText(code);
+          const btn = document.getElementById('copy');
+          btn.textContent = '✓ Copied';
+          btn.classList.add('copied');
+          setTimeout(() => { btn.textContent = 'Copy code'; btn.classList.remove('copied'); }, 2000);
+        } catch (e) {
+          alert('Clipboard copy failed. Select the code manually and copy it.');
+        }
+      });
+    } else {
+      output.innerHTML = `
+        <div class="status info">No authorization data</div>
+        <p>This endpoint receives OAuth 2.0 authorization callbacks from third-party providers (e.g., TikTok for Developers) after the user grants access to NOVAKU's first-party publishing tool.</p>
+        <p class="meta">If you reached this page directly, there is nothing user-facing here. The expected query parameters are <code>code</code>, <code>state</code> and <code>scopes</code> for success, or <code>error</code> for failure.</p>
+      `;
+    }
+  </script>
+</body>
+</html>
