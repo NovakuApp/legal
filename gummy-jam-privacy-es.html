@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de privacidad — Gummy Jam</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #ffffff; color: #1a1a1a; font-size: 16px; line-height: 1.7; }
+    .container { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+    header { background: #ffffff; border-bottom: 1px solid #e8e8e8; padding: 32px 0 24px; text-align: center; }
+    .app-name { font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #4ECBA1; margin-bottom: 10px; }
+    header h1 { font-size: 2rem; font-weight: 700; color: #1a1a1a; margin-bottom: 8px; }
+    .meta { font-size: 0.875rem; color: #666; margin-bottom: 24px; }
+    .version-pill { display: inline-block; background: #4ECBA1; color: #ffffff; font-size: 0.75rem; font-weight: 700; padding: 4px 10px; border-radius: 12px; letter-spacing: 0.04em; margin-left: 8px; vertical-align: middle; }
+    .nav-pills { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 8px; }
+    .nav-pills a { display: inline-block; padding: 6px 14px; border-radius: 20px; font-size: 0.8125rem; font-weight: 500; text-decoration: none; border: 1.5px solid #e0e0e0; color: #555; transition: border-color 0.15s, color 0.15s, background 0.15s; }
+    .nav-pills a:hover { border-color: #4ECBA1; color: #4ECBA1; }
+    .nav-pills a.active { background: #4ECBA1; border-color: #4ECBA1; color: #ffffff; }
+    .nav-pills .group-label { width: 100%; text-align: center; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: #999; margin: 8px 0 4px; }
+    main { padding: 48px 0 64px; }
+    h2 { font-size: 1.35rem; font-weight: 700; color: #1a1a1a; margin: 40px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #f0f0f0; }
+    h3 { font-size: 1.05rem; font-weight: 600; color: #1a1a1a; margin: 28px 0 10px; }
+    p { margin-bottom: 14px; color: #333; }
+    ul, ol { margin: 10px 0 14px 24px; color: #333; }
+    li { margin-bottom: 6px; }
+    a { color: #4ECBA1; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { font-weight: 600; color: #1a1a1a; }
+    table { width: 100%; border-collapse: collapse; margin: 16px 0 20px; font-size: 0.9rem; }
+    th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid #eee; vertical-align: top; }
+    th { background: #fafafa; font-weight: 700; color: #1a1a1a; }
+    tr:last-child td { border-bottom: none; }
+    .highlight-box { background: #f4fdf9; border: 1.5px solid #4ECBA1; border-radius: 8px; padding: 20px 24px; margin: 24px 0; }
+    .highlight-box p { margin-bottom: 6px; color: #1a1a1a; }
+    .highlight-box p:last-child { margin-bottom: 0; }
+    .warning-box { background: #fff8f0; border: 1.5px solid #f0a830; border-radius: 8px; padding: 18px 22px; margin: 20px 0; }
+    .warning-box p { margin-bottom: 6px; color: #7a4f00; }
+    .warning-box p:last-child { margin-bottom: 0; }
+    .app-section { border-left: 4px solid #e0e0e0; padding-left: 20px; margin: 8px 0; }
+    .app-section.history { border-left-color: #FF6B4A; }
+    .app-section.fanmosaic { border-left-color: #E61D25; }
+    .app-badge { display: inline-block; padding: 3px 12px; border-radius: 12px; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #ffffff; }
+    .app-badge.history { background: #FF6B4A; }
+    .app-badge.fanmosaic { background: #E61D25; }
+    .section-divider { border: none; border-top: 2px solid #f0f0f0; margin: 48px 0 32px; }
+    .app-section h2 { border-bottom-color: transparent; margin-top: 0; }
+    .app-section.history h2 { color: #FF6B4A; }
+    .app-section.fanmosaic h2 { color: #E61D25; }
+    .app-section.history h3 { color: #c9431e; }
+    .app-section.fanmosaic h3 { color: #b01520; }
+    footer { background: #f7f7f7; border-top: 1px solid #e8e8e8; padding: 28px 0; text-align: center; }
+    footer p { font-size: 0.875rem; color: #888; margin-bottom: 12px; }
+    footer p:last-child { margin-bottom: 0; }
+    footer .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+    footer .footer-links a { font-size: 0.8125rem; color: #666; }
+    footer .footer-links a:hover { color: #4ECBA1; }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 0.85em; background: #f4f4f4; padding: 1px 6px; border-radius: 3px; }
+    @media (max-width: 600px) { header h1 { font-size: 1.5rem; } h2 { font-size: 1.15rem; } .highlight-box, .warning-box { padding: 16px 18px; } .app-section { padding-left: 14px; } table { font-size: 0.82rem; } th, td { padding: 8px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="app-name">NOVAKU · Gummy Jam</div>
+      <h1>Política de privacidad <span class="version-pill">v1.0.0</span></h1>
+      <p class="meta">Fecha de entrada en vigor: 30 de septiembre de 2026 · Última actualización: 30 de septiembre de 2026</p>
+      <nav class="nav-pills" aria-label="Languages">
+        <span class="group-label">Política de privacidad de Gummy Jam</span>
+        <a href="gummy-jam-privacy-en.html">EN</a>
+        <a href="gummy-jam-privacy-es.html" class="active" aria-current="page">ES</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+
+<div class="highlight-box">
+<p><strong>Resumen.</strong> Gummy Jam no tiene cuentas y nunca te pide nombre, email, fotos, contactos ni ubicación. Tu progreso se guarda en tu dispositivo. La app muestra anuncios mediante Google AdMob y ofrece una compra opcional (el "Pack Sin Anuncios") a través de Google Play y RevenueCat; esos servicios reciben los datos técnicos limitados que se describen abajo. Nunca vendemos tus datos.</p>
+</div>
+
+<h2>1. Responsable</h2>
+<p>Gummy Jam lo publica <strong>Novaku</strong>, desarrollador independiente establecido en España, responsable del tratamiento según el Reglamento (UE) 2016/679 (RGPD) y la Ley Orgánica 3/2018 (LOPDGDD).</p>
+<p>Contacto de privacidad: <a href="mailto:novakuapp@gmail.com">novakuapp@gmail.com</a> (asunto "Privacidad – Gummy Jam").</p>
+
+<h2>2. Lo que se queda en tu dispositivo</h2>
+<p>Niveles superados, monedas, ayudas, estilos de gusano, cofres, racha del reto diario y ajustes (sonido, música, vibración) se guardan solo en tu dispositivo. No se nos envían y se borran al desinstalar la app o borrar sus datos.</p>
+
+<h2>3. Datos tratados por servicios de terceros</h2>
+<table>
+<tr><th>Servicio</th><th>Datos</th><th>Finalidad</th><th>Base jurídica</th></tr>
+<tr><td><strong>Google AdMob</strong> y la herramienta de consentimiento de Google (User Messaging Platform) — Google Ireland Ltd.</td><td>ID de publicidad, dirección IP (para estimar la ubicación aproximada, p. ej. el país), información del dispositivo y la app, interacciones con anuncios (vistas, toques), datos de diagnóstico y errores del SDK de anuncios.</td><td>Mostrar y medir anuncios, limitar su frecuencia y prevenir el fraude. Anuncios personalizados solo si das tu consentimiento.</td><td>Consentimiento (art. 6.1.a RGPD) para anuncios personalizados y almacenamiento en el dispositivo en el EEE/Reino Unido; interés legítimo (art. 6.1.f) para anuncios no personalizados, seguridad y prevención del fraude.</td></tr>
+<tr><td><strong>RevenueCat, Inc.</strong></td><td>Historial de compra del Pack Sin Anuncios, un ID de usuario anónimo y aleatorio, información básica del dispositivo y la app (modelo, versión del sistema, país, versión de la app).</td><td>Validar la compra con Google Play, activarla, restaurarla tras reinstalar y detectar fraude o reembolsos.</td><td>Ejecución del contrato de compra (art. 6.1.b).</td></tr>
+<tr><td><strong>Google Play</strong> (facturación)</td><td>Los datos de pago los gestiona íntegramente Google. Ni nosotros ni RevenueCat vemos tu tarjeta o cuenta bancaria.</td><td>Procesar el pago.</td><td>Contrato (art. 6.1.b).</td></tr>
+</table>
+<p>Sus políticas: <a href="https://policies.google.com/privacy">Política de privacidad de Google</a>, <a href="https://policies.google.com/technologies/partner-sites">Cómo usa Google la información de las apps que utilizan sus servicios</a>, <a href="https://www.revenuecat.com/privacy">Política de privacidad de RevenueCat</a>.</p>
+<p>Estos datos no están vinculados a tu identidad: Gummy Jam no tiene cuentas y no podemos identificarte con ellos.</p>
+
+<h2>4. Tus opciones sobre los anuncios</h2>
+<ul>
+<li>En el EEE, Reino Unido y Suiza se muestra un formulario de consentimiento al abrir la app por primera vez. Puedes cambiar tu elección en cualquier momento en <strong>Ajustes → Opciones de privacidad</strong> dentro del juego.</li>
+<li>Puedes restablecer o eliminar tu ID de publicidad en los ajustes de Android (Google → Anuncios).</li>
+<li>El Pack Sin Anuncios opcional elimina los banners, los anuncios entre niveles y los de apertura. Los vídeos con premio son siempre opcionales.</li>
+</ul>
+
+<h2>5. Cesión de datos</h2>
+<p>No vendemos ni alquilamos datos personales. Solo los tratan los proveedores del apartado 3. Cuando usas "Compartir" en el reto diario, eres tú quien envía el texto a la app que elijas mediante el menú de compartir del dispositivo.</p>
+
+<h2>6. Transferencias internacionales</h2>
+<p>Google y RevenueCat pueden tratar datos en Estados Unidos, al amparo del Marco de Privacidad de Datos UE-EE. UU. y/o de las Cláusulas Contractuales Tipo de la Comisión Europea.</p>
+
+<h2>7. Conservación</h2>
+<ul>
+<li>Datos del juego en el dispositivo: hasta que desinstales la app o borres sus datos.</li>
+<li>Datos de AdMob: según los plazos de conservación de Google.</li>
+<li>Registros de compra en RevenueCat: mientras sean necesarios para mantener y restaurar tu compra y para cumplir obligaciones contables y fiscales.</li>
+</ul>
+
+<h2>8. Tus derechos</h2>
+<p>Según los arts. 15–22 del RGPD puedes solicitar acceso, rectificación, supresión, limitación, portabilidad, oponerte al tratamiento basado en interés legítimo y retirar tu consentimiento en cualquier momento sin que afecte al tratamiento anterior. Escribe a <a href="mailto:novakuapp@gmail.com">novakuapp@gmail.com</a>; respondemos en un plazo de un mes. Como no guardamos datos de cuenta, podemos pedirte el número de pedido (GPA.…) del recibo de Google Play para localizar los registros de compra.</p>
+<p>También puedes reclamar ante la Agencia Española de Protección de Datos (<a href="https://www.aepd.es">AEPD</a>, C/ Jorge Juan 6, 28001 Madrid) o la autoridad de tu país del EEE.</p>
+
+<h2>9. Menores</h2>
+<p>Gummy Jam es un juego de puzles para público general y no está dirigido a menores de 13 años. No recogemos a sabiendas datos de menores. Si crees que un menor ha facilitado datos, contáctanos y te ayudaremos a eliminarlos.</p>
+
+<h2>10. Seguridad</h2>
+<p>Todos los datos que envía la app viajan cifrados (HTTPS/TLS). La app no pide permisos especiales (ni ubicación, cámara, micrófono, contactos ni archivos).</p>
+
+<h2>11. Cambios</h2>
+<p>Podemos actualizar esta política; la fecha de arriba indica la versión vigente. Los cambios importantes se anunciarán en la app o en su ficha de la tienda.</p>
+
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <p>NOVAKU — &copy; 2026 Novaku. All rights reserved.</p>
+      <p>En caso de conflicto entre versiones, prevalece la versión en <strong>español</strong>.</p>
+      <nav class="footer-links">
+        <a href="gummy-jam-privacy-en.html">Privacy (EN)</a>
+        <a href="gummy-jam-privacy-es.html">ES</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
