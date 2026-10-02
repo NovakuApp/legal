@@ -140,58 +140,32 @@
       <span class="app-badge badge-flagquiz">Novaku Flag Quiz</span>
       <h2>Novaku Flag Quiz</h2>
 
-      <h3>Step-by-step: Delete your account and all data</h3>
+      <p>The current version of Novaku Flag Quiz has <strong>no accounts</strong>: your progress is stored only on your device and is not sent to our servers. See the <a href="flag-quiz-privacy-en.html">Flag Quiz privacy policy</a> (<a href="flag-quiz-privacy-es.html">ES</a>).</p>
+
+      <h3>Delete all data stored by the app</h3>
       <ol>
-        <li>Open <strong>Novaku Flag Quiz</strong> on your device.</li>
-        <li>Tap <strong>Profile</strong> (bottom navigation, rightmost icon).</li>
-        <li>Tap <strong>Settings</strong>, then <strong>Account</strong>.</li>
-        <li>Tap <strong>Delete account</strong>.</li>
-        <li>Confirm the action in the two-step confirmation dialog.</li>
+        <li>Open <strong>Android Settings</strong> → <strong>Apps</strong> → <strong>Novaku Flag Quiz</strong>.</li>
+        <li>Tap <strong>Storage</strong> → <strong>Clear data</strong>, or simply uninstall the app.</li>
       </ol>
+      <p>This permanently removes your lessons, stars, XP, hearts, streaks, daily challenges, review progress and settings.</p>
 
-      <h3>What happens immediately</h3>
-      <ul>
-        <li>Your anonymous Supabase account (or Google-linked account, if you upgraded) is permanently deleted from the server. Our <code>fq-account-delete</code> Edge Function runs synchronously and is the authoritative source of truth.</li>
-        <li>All your Flag Quiz data is purged: streaks, XP, levels, daily attempts, sprint and survival session histories, achievement unlocks, region mastery, Confusables training state, push notification tokens, and ad reward audit log.</li>
-        <li>All local data on your device is wiped: 5 local databases (app state, daily cache, country cache, session state, settings preferences) are cleared.</li>
-        <li>You are returned to the onboarding screen. Re-opening the app creates a brand-new anonymous account with no connection to the deleted one.</li>
-      </ul>
-
-      <h3>What is retained, and why</h3>
-      <ul>
-        <li><strong>Proof-of-consent record</strong>: the timestamp, version, and SHA-256 hash of the Privacy Policy you accepted are retained for 6 years post-deletion, as required by §6 of the <a href="privacy-policy-en.html">Privacy Policy</a> (GDPR Art. 7.1 evidence).</li>
-        <li><strong>Anonymised aggregate counters</strong>: total play counts, completion rates, and similar metrics that contain no personal data may continue to exist in aggregated form.</li>
-        <li><strong>Crash reports</strong>: any crash logs captured by Sentry are automatically deleted after 90 days; we cannot retrieve or attribute them to your account once your user ID is deleted.</li>
-      </ul>
-
-      <h3>Pro subscription holders</h3>
-      <p>Deleting your in-app account does <strong>not</strong> cancel your Google Play subscription. If you have an active Novaku Pro subscription (<code>novaku_pro_annual</code> or <code>flagquiz_pro_lifetime</code>), you must cancel it separately through Google Play:</p>
+      <h3>Pro purchases and subscriptions</h3>
+      <p>Uninstalling or clearing data does <strong>not</strong> cancel a subscription. If you have an active NOVAKU Pro annual subscription, cancel it in Google Play:</p>
       <ol>
         <li>Open the <strong>Google Play Store</strong> app.</li>
         <li>Tap your profile icon, then <strong>Payments &amp; subscriptions</strong> → <strong>Subscriptions</strong>.</li>
-        <li>Find <strong>Novaku Flag Quiz</strong> or <strong>Novaku Pro</strong> and tap <strong>Cancel subscription</strong>.</li>
+        <li>Find <strong>Novaku Flag Quiz</strong> or <strong>NOVAKU Pro</strong> and tap <strong>Cancel subscription</strong>.</li>
       </ol>
-      <p>A one-time lifetime purchase cannot be refunded automatically; contact <a href="mailto:novakuapp@gmail.com">novakuapp@gmail.com</a> within the Play Store's refund window if you need a refund.</p>
+      <p>Lifetime purchases stay linked to your Google Play account and can be restored after reinstalling. For refunds, contact <a href="mailto:novakuapp@gmail.com">novakuapp@gmail.com</a> within the Play Store's refund window.</p>
 
-      <h3>Request permanent cloud data deletion by email</h3>
-      <p>If you cannot use the in-app deletion flow (uninstalled the app, lost device access, etc.):</p>
+      <h3>Request deletion of other records by email</h3>
+      <p>Some data is held by our service providers (purchase records at RevenueCat, crash reports at Sentry). Earlier test versions of the app also created an anonymous account on our servers. To delete any of it:</p>
       <ol>
         <li>Send an email to <a href="mailto:novakuapp@gmail.com">novakuapp@gmail.com</a> with subject: <em>"Data Deletion Request — Novaku Flag Quiz"</em>.</li>
-        <li>Include any identifier you remember: the email address you used (if you upgraded with Google Sign-In), the approximate date you started playing, or the device model. Anonymous-only accounts are identified by the device's anonymous Supabase user ID, which we may not be able to recover without your help.</li>
-        <li>We will process your request and permanently delete your data within 30 days, as required by GDPR Art. 17.</li>
+        <li>Include what helps us find your data: the purchase order number (GPA.…) from your Google Play receipt, the email you used if you signed in to a test version, or the approximate date you started playing and your device model.</li>
+        <li>We will delete your data within 30 days, as required by GDPR Art. 17. Crash reports are deleted automatically after at most 90 days.</li>
       </ol>
-
-      <h3>What gets deleted</h3>
-      <ul>
-        <li>All Daily Challenge attempts, scores, and streak history</li>
-        <li>All Classic, Sprint, and Survival session records</li>
-        <li>All Confusables training progress</li>
-        <li>All achievements, region mastery, and level/XP state</li>
-        <li>All push notification tokens registered to your account</li>
-        <li>All rewarded-ad claim audit entries</li>
-        <li>Your anonymous Supabase user ID (or Google-linked account, if upgraded)</li>
-        <li>All local preferences and caches on your device</li>
-      </ul>
+      <p>Records we must keep for accounting or tax reasons are kept only for the legally required period.</p>
     </div>
 
     <div class="highlight-box">
