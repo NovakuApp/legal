@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Stackborne</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #ffffff; color: #1a1a1a; font-size: 16px; line-height: 1.7; }
+    .container { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+    header { background: #ffffff; border-bottom: 1px solid #e8e8e8; padding: 32px 0 24px; text-align: center; }
+    .app-name { font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #8A6420; margin-bottom: 10px; }
+    header h1 { font-size: 2rem; font-weight: 700; color: #1a1a1a; margin-bottom: 8px; }
+    .meta { font-size: 0.875rem; color: #666; margin-bottom: 24px; }
+    .version-pill { display: inline-block; background: #8A6420; color: #ffffff; font-size: 0.75rem; font-weight: 700; padding: 4px 10px; border-radius: 12px; letter-spacing: 0.04em; margin-left: 8px; vertical-align: middle; }
+    .nav-pills { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 8px; }
+    .nav-pills a { display: inline-block; padding: 6px 14px; border-radius: 20px; font-size: 0.8125rem; font-weight: 500; text-decoration: none; border: 1.5px solid #e0e0e0; color: #555; transition: border-color 0.15s, color 0.15s, background 0.15s; }
+    .nav-pills a:hover { border-color: #8A6420; color: #8A6420; }
+    .nav-pills a.active { background: #8A6420; border-color: #8A6420; color: #ffffff; }
+    .nav-pills .group-label { width: 100%; text-align: center; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: #999; margin: 8px 0 4px; }
+    main { padding: 48px 0 64px; }
+    h2 { font-size: 1.35rem; font-weight: 700; color: #1a1a1a; margin: 40px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #f0f0f0; }
+    h3 { font-size: 1.05rem; font-weight: 600; color: #1a1a1a; margin: 28px 0 10px; }
+    p { margin-bottom: 14px; color: #333; }
+    ul, ol { margin: 10px 0 14px 24px; color: #333; }
+    li { margin-bottom: 6px; }
+    a { color: #8A6420; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { font-weight: 600; color: #1a1a1a; }
+    table { width: 100%; border-collapse: collapse; margin: 16px 0 20px; font-size: 0.9rem; }
+    th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid #eee; vertical-align: top; }
+    th { background: #fafafa; font-weight: 700; color: #1a1a1a; }
+    tr:last-child td { border-bottom: none; }
+    .highlight-box { background: #fbf7ef; border: 1.5px solid #8A6420; border-radius: 8px; padding: 20px 24px; margin: 24px 0; }
+    .highlight-box p { margin-bottom: 6px; color: #1a1a1a; }
+    .highlight-box p:last-child { margin-bottom: 0; }
+    .warning-box { background: #fff8f0; border: 1.5px solid #f0a830; border-radius: 8px; padding: 18px 22px; margin: 20px 0; }
+    .warning-box p { margin-bottom: 6px; color: #7a4f00; }
+    .warning-box p:last-child { margin-bottom: 0; }
+    .app-section { border-left: 4px solid #e0e0e0; padding-left: 20px; margin: 8px 0; }
+    .app-section.history { border-left-color: #FF6B4A; }
+    .app-section.fanmosaic { border-left-color: #E61D25; }
+    .app-badge { display: inline-block; padding: 3px 12px; border-radius: 12px; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #ffffff; }
+    .app-badge.history { background: #FF6B4A; }
+    .app-badge.fanmosaic { background: #E61D25; }
+    .section-divider { border: none; border-top: 2px solid #f0f0f0; margin: 48px 0 32px; }
+    .app-section h2 { border-bottom-color: transparent; margin-top: 0; }
+    .app-section.history h2 { color: #FF6B4A; }
+    .app-section.fanmosaic h2 { color: #E61D25; }
+    .app-section.history h3 { color: #c9431e; }
+    .app-section.fanmosaic h3 { color: #b01520; }
+    footer { background: #f7f7f7; border-top: 1px solid #e8e8e8; padding: 28px 0; text-align: center; }
+    footer p { font-size: 0.875rem; color: #888; margin-bottom: 12px; }
+    footer p:last-child { margin-bottom: 0; }
+    footer .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+    footer .footer-links a { font-size: 0.8125rem; color: #666; }
+    footer .footer-links a:hover { color: #8A6420; }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 0.85em; background: #f4f4f4; padding: 1px 6px; border-radius: 3px; }
+    @media (max-width: 600px) { header h1 { font-size: 1.5rem; } h2 { font-size: 1.15rem; } .highlight-box, .warning-box { padding: 16px 18px; } .app-section { padding-left: 14px; } table, tbody, tr, td { display: block; width: 100%; } tr:first-child { display: none; } tr { border: 1px solid #eee; border-radius: 8px; padding: 4px 0; margin-bottom: 12px; } td { border-bottom: none; padding: 6px 12px; font-size: 0.9rem; } td::before { content: attr(data-label); display: block; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #999; } th, td { padding: 8px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="app-name">NOVAKU · Stackborne</div>
+      <h1>Privacy Policy <span class="version-pill">v1.0.0</span></h1>
+      <p class="meta">Effective date: 9 October 2026 · Last updated: 9 October 2026</p>
+      <nav class="nav-pills" aria-label="Languages">
+        <span class="group-label">Stackborne privacy policy</span>
+        <a href="stackborne-privacy-en.html" class="active" aria-current="page">EN</a>
+        <a href="stackborne-privacy-es.html">ES</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+
+<div class="highlight-box">
+<p><strong>In short.</strong> Stackborne has no accounts and never asks for your name, email, photos, contacts or location. Your game progress stays on your device. The app shows ads through Google AdMob and sells one optional purchase (the "No Ads" pack) through Google Play and RevenueCat; those services receive the limited technical data described below. We never sell your data.</p>
+</div>
+
+<h2>1. Who is responsible</h2>
+<p>Stackborne is published by <strong>Novaku</strong>, an independent developer established in Spain, which is the data controller under Regulation (EU) 2016/679 (GDPR) and Spanish Organic Law 3/2018 (LOPDGDD).</p>
+<p>Contact for privacy matters: <a href="mailto:novakuapp@gmail.com">novakuapp@gmail.com</a> (subject "Privacy – Stackborne").</p>
+
+<h2>2. What stays on your device</h2>
+<p>Your records (the Ascent and the Classic mode), the zones you have reached, whether you own the No Ads pack, and your settings (sound, music, vibration, reduce motion) are stored only on your device. They are not sent to us and are deleted when you uninstall the app or clear its data.</p>
+
+<h2>3. Data processed by third-party services</h2>
+<table>
+<tr><th>Service</th><th>Data</th><th>Purpose</th><th>Legal basis</th></tr>
+<tr><td data-label="Service"><strong>Google AdMob</strong> and Google's consent tool (User Messaging Platform) — Google Ireland Ltd.</td><td data-label="Data">Advertising ID, IP address (used to estimate approximate location, e.g. country), device and app information, ad interactions (views, taps), diagnostic and crash data of the ads SDK.</td><td data-label="Purpose">Showing ads, measuring them, limiting their frequency, and preventing fraud. Personalised ads only if you consent.</td><td data-label="Legal basis">Consent (GDPR Art. 6(1)(a)) for personalised ads and device storage in the EEA/UK; legitimate interest (Art. 6(1)(f)) for non-personalised ads, security and fraud prevention.</td></tr>
+<tr><td data-label="Service"><strong>RevenueCat, Inc.</strong></td><td data-label="Data">Purchase history of the No Ads pack, a random anonymous app user ID, basic device and app information (model, OS version, country, app version).</td><td data-label="Purpose">Validating the purchase with Google Play, unlocking it, restoring it after reinstalling, and detecting fraud or refunds.</td><td data-label="Legal basis">Performance of the purchase contract (Art. 6(1)(b)).</td></tr>
+<tr><td data-label="Service"><strong>Google Play</strong> (billing)</td><td data-label="Data">Payment details are handled entirely by Google. We and RevenueCat never see your card or bank details.</td><td data-label="Purpose">Processing the payment.</td><td data-label="Legal basis">Contract (Art. 6(1)(b)).</td></tr>
+</table>
+<p>Their own policies: <a href="https://policies.google.com/privacy">Google Privacy Policy</a>, <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from apps that use its services</a>, <a href="https://www.revenuecat.com/privacy">RevenueCat Privacy Policy</a>.</p>
+<p>The data above is not linked to your identity: Stackborne has no accounts and we cannot identify you from it.</p>
+
+<h2>4. Your choices about ads</h2>
+<ul>
+<li>In the EEA, the UK and Switzerland, a consent form is shown on first launch. You can change your choice at any time in <strong>Settings → Privacy options</strong> inside the game.</li>
+<li>You can reset or delete your advertising ID in your device's Android settings (Google → Ads).</li>
+<li>The optional No Ads pack removes the banner and the interstitial ads, and grants the "second chance" without a video. Videos with a reward (the second chance) are always optional.</li>
+</ul>
+
+<h2>5. Sharing</h2>
+<p>We do not sell or rent personal data. Data is only processed by the providers listed in section 3. The game has no sharing, chat or social features.</p>
+
+<h2>6. International transfers</h2>
+<p>Google and RevenueCat may process data in the United States. These transfers rely on the EU–US Data Privacy Framework and/or the European Commission's Standard Contractual Clauses.</p>
+
+<h2>7. Retention</h2>
+<ul>
+<li>On-device game data: until you uninstall the app or clear its data.</li>
+<li>AdMob data: according to Google's retention periods.</li>
+<li>Purchase records at RevenueCat: while needed to keep your purchase active and restorable, and to comply with accounting and tax obligations.</li>
+</ul>
+
+<h2>8. Your rights</h2>
+<p>Under GDPR Arts. 15–22 you can request access, rectification, erasure, restriction, portability, object to processing based on legitimate interest, and withdraw consent at any time without affecting earlier processing. Write to <a href="mailto:novakuapp@gmail.com">novakuapp@gmail.com</a>; we answer within one month. Because we hold no account data, we may ask for the purchase order number (GPA.…) from your Google Play receipt to locate purchase records.</p>
+<p>You can also complain to the Spanish Data Protection Agency (<a href="https://www.aepd.es">AEPD</a>, C/ Jorge Juan 6, 28001 Madrid) or the authority of your EU/EEA country.</p>
+
+<h2>9. Children</h2>
+<p>Stackborne is a general-audience arcade game and is not directed at children under 13. We do not knowingly collect personal data from children. If you believe a child has provided data, contact us and we will help delete it.</p>
+
+<h2>10. Security</h2>
+<p>All data sent by the app travels encrypted (HTTPS/TLS). The app requests no special permissions (no location, camera, microphone, contacts or files); it only uses the network for ads and purchases, and vibration for haptic feedback.</p>
+
+<h2>11. Changes</h2>
+<p>We may update this policy; the date at the top shows the latest version. Significant changes will be announced in the app or its store listing.</p>
+
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <p>NOVAKU — &copy; 2026 Novaku. All rights reserved.</p>
+      <p>In case of conflict between language versions, the <strong>Spanish</strong> version prevails.</p>
+      <nav class="footer-links">
+        <a href="stackborne-privacy-en.html">Privacy (EN)</a>
+        <a href="stackborne-privacy-es.html">ES</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
